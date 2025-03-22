@@ -45,30 +45,31 @@
   flex-direction: column;
   gap: calc(var(--spaceMD) * 0.5);
   display: none;
+}
 
-  li {
-    width: 200px;
-    a {
-      display: flex;
-      align-items: center;
-      gap: calc(var(--spaceMD) * 0.5);
-      color: var(--textMuted);
-      text-decoration: none;
-      transition: color 0.5s;
+.discordList li {
+  width: 200px;
+}
 
-      &:hover {
-        color: var(--shape);
+.discordList li a {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spaceMD) * 0.5);
+  color: var(--textMuted);
+  text-decoration: none;
+  transition: color 0.5s;
 
-        & > svg {
-          color: var(--discordColor);
-        }
-      }
+  &:hover {
+    color: var(--shape);
 
-      & > svg {
-        transition: color 0.5s;
-        font-size: 1.2rem;
-      }
+    & > svg {
+      color: var(--discordColor);
     }
+  }
+
+  & > svg {
+    transition: color 0.5s;
+    font-size: 1.2rem;
   }
 }
 

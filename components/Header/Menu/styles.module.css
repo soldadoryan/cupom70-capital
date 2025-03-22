@@ -6,11 +6,11 @@
   height: 80px;
   border-bottom: 1px solid var(--borderColor);
   margin-bottom: calc(var(--spaceXS) * 2);
+}
 
-  nav {
-    display: flex;
-    gap: var(--spaceMD);
-  }
+.menu nav {
+  display: flex;
+  gap: var(--spaceMD);
 }
 
 .customContainer {
@@ -73,10 +73,6 @@
       display: block;
     }
 
-    nav {
-      display: none;
-    }
-
     .activedMenu {
       background-color: var(--dark);
       position: absolute;
@@ -88,6 +84,10 @@
       border-radius: 10px;
       z-index: 2;
     }
+  }
+
+  .menu nav {
+    display: none;
   }
 }
 

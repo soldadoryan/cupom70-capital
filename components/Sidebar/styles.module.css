@@ -11,16 +11,16 @@
   flex-direction: column;
   justify-content: center;
   gap: var(--spaceMD);
+}
 
-  h3 {
-    color: var(--textMuted);
-    text-transform: uppercase;
-    letter-spacing: var(--titleSpacing);
-  }
+.highlightCard h3 {
+  color: var(--textMuted);
+  text-transform: uppercase;
+  letter-spacing: var(--titleSpacing);
+}
 
-  p {
-    color: var(--textMuted);
-  }
+.highlightCard p {
+  color: var(--textMuted);
 }
 
 @media screen and (max-width: 768px) {
