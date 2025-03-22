@@ -2,7 +2,7 @@
   flex: 1;
   gap: var(--spaceXS);
 
-  main {
+  .main {
     padding: 0 0 calc(var(--spaceXS) * 4);
 
     h2 {

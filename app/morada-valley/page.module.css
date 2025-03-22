@@ -2,7 +2,7 @@
   justify-content: space-between;
   gap: var(--spaceXS);
 
-  main {
+  .main {
     display: flex;
     flex-direction: column;
     padding-bottom: calc(var(--spaceXS) * 4);

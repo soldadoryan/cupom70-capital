@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <PageStructure>
       <Container customClass={s.customContainer}>
-        <main>
+        <main className={s.main}>
           <h2>Utilize as categorias acima para navegar entre os produtos.</h2>
           <p>
             Bem-vindo à Loja VIP da Capital, o lugar ideal para você adquirir

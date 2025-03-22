@@ -14,7 +14,7 @@ export default function MoradaValley() {
   return (
     <PageStructure>
       <Container customClass={s.customContainer}>
-        <main>
+        <main className={s.main}>
           <h2 className={s.title}>Coins - Morada do Valley</h2>
           <Products products={productsList} />
         </main>
