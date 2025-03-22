@@ -31,11 +31,11 @@
   width: 100%;
 }
 
-.itemList li {
+.itemsList > li {
   border-bottom: 1px solid var(--shapeO20);
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
   padding: var(--spaceXS) 0;
   gap: calc(var(--spaceXS) * 1.3);
 }
