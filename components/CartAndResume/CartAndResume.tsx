@@ -46,7 +46,7 @@ export function CartAndResume() {
         value={userId}
         onChange={(e) => setUserId(e.target.value)}
         type="number"
-        placeholder="Digite o ID do personagem"
+        placeholder="Digite o ID do seu personagem"
       />
       <div className={s.total}>Total R$24.00</div>
     </div>
