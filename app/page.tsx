@@ -1,95 +1,42 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { PageStructure } from "@/components/PageStructure/PageStructure";
+import { Container } from "@/components/Container";
+import { Sidebar } from "@/components/Sidebar";
+import s from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <PageStructure>
+      <Container customClass={s.customContainer}>
+        <main>
+          <h2>Utilize as categorias acima para navegar entre os produtos.</h2>
+          <p>
+            Bem-vindo à Loja VIP da Capital, o lugar ideal para você adquirir
+            itens exclusivos que farão toda a diferença na sua experiência no
+            servidor! Aqui, priorizamos qualidade e conveniência, garantindo que
+            você tenha acesso ao melhor em apenas alguns cliques. Antes de
+            começar, certifique-se de utilizar o botão localizado na topbar do
+            site para ajustar a moeda dos valores para reais (BRL), facilitando
+            sua compra e evitando qualquer confusão.
+          </p>
+          <p>
+            É muito importante que você preste atenção a cada detalhe durante o
+            processo de compra. Verifique com cuidado o ID que está utilizando e
+            certifique-se de estar comprando para a cidade correta, evitando
+            transtornos. Pequenos deslizes como esses podem causar atrasos ou
+            até mesmo inviabilizar a entrega dos seus itens. Nosso sistema foi
+            pensado para ser simples, mas a atenção do player é essencial para
+            que tudo ocorra sem problemas.
+          </p>
+          <p>
+            Após finalizar sua compra, nossos sistemas garantem a entrega
+            automática dos itens a cada 30 minutos. No entanto, se você não
+            quiser esperar, temos uma solução rápida e prática: basta utilizar o
+            comando /resgatar no console F8 do seu jogo. Aproveite a Loja VIP da
+            Capital e eleve sua experiência na cidade a um novo nível!
+          </p>
+        </main>
+        <Sidebar />
+      </Container>
+    </PageStructure>
   );
 }

@@ -1,0 +1,79 @@
+.wrap {
+  position: relative;
+}
+
+.wrap:hover .discordList {
+  display: flex;
+}
+
+.discordButton {
+  background-color: var(--transparent);
+  height: 40px;
+  padding: 0 var(--spaceMD);
+  border-radius: 20px;
+  border: 1px solid var(--shape);
+  color: var(--shape);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  &.actived {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  & > svg {
+    font-size: 1rem;
+  }
+}
+
+.discordButton:hover {
+  background-color: var(--primaryO20);
+}
+
+.discordList {
+  background-color: var(--dark);
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spaceMD) * 0.5);
+  display: none;
+
+  li {
+    width: 200px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--spaceMD) * 0.5);
+      color: var(--textMuted);
+      text-decoration: none;
+      transition: color 0.5s;
+
+      &:hover {
+        color: var(--shape);
+
+        & > svg {
+          color: var(--discordColor);
+        }
+      }
+
+      & > svg {
+        transition: color 0.5s;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .discordButton {
+    display: none;
+  }
+}

@@ -1,0 +1,147 @@
+.card {
+  width: 500px;
+  padding: var(--spaceXS);
+  border: 1px solid var(--primaryO50);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceXS);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    color: var(--shape);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+
+  small {
+    text-transform: uppercase;
+    color: var(--textMuted);
+  }
+}
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  li {
+    border-bottom: 1px solid var(--shapeO20);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--spaceXS) 0;
+    gap: calc(var(--spaceXS) * 1.3);
+  }
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  strong {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: var(--fontNormal);
+  }
+
+  span {
+    font-size: 0.7rem;
+    color: var(--textMuted);
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--textMuted);
+}
+
+.amountInput {
+  background-color: var(--primaryO20);
+  border-radius: 5px;
+  border: 1px solid var(--shapeO20);
+  width: 55px;
+  height: 40px;
+  color: var(--shape);
+  text-align: center;
+  outline: none;
+}
+
+.wrapIcons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spaceMD);
+}
+
+.refreshButton {
+  color: var(--shape);
+  background-color: var(--transparent);
+  border: 0;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteButton {
+  background-color: var(--transparent);
+  border-radius: 15px;
+  font-size: 1.1rem;
+  width: 35px;
+  height: 30px;
+  border: 1px solid var(--error);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--error);
+}
+
+.inputId {
+  background-color: var(--primaryO20);
+  border-radius: 5px;
+  border: 1px solid var(--shapeO20);
+  width: 100%;
+  height: 40px;
+  padding: 0 var(--spaceMD);
+  color: var(--shape);
+  outline: none;
+}
+
+.total {
+  color: var(--shape);
+  font-size: 1.5rem;
+  font-weight: var(--fontBold);
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .itemsList {
+    li {
+      flex-wrap: wrap;
+    }
+  }
+
+  .itemInfo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapIcons {
+    justify-content: flex-start;
+  }
+}

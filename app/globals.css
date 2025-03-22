@@ -1,12 +1,43 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* COLORS */
+  --background: #111111;
+  --dark: #000;
+  --transparent: transparent;
+  --primary: rgba(92, 178, 255);
+  --primaryO50: rgba(92, 178, 255, 0.5);
+  --primaryO20: rgba(92, 178, 255, 0.2);
+  --borderColor: #2f3348;
+  --shape: #ffffff;
+  --shapeO50: rgba(255, 255, 255, 0.5);
+  --shapeO20: rgba(255, 255, 255, 0.2);
+  --textMuted: #a6a8b5;
+  --discordColor: #363382;
+  --error: #ff3300;
+  --success: #00cc00;
+
+  /* FONTS */
+  --fontNormal: 400;
+  --fontMedium: 500;
+  --fontBold: 600;
+  --titleSpacing: 0.05rem;
+
+  /* SHAPES */
+  --containerWidth: 1140px;
+
+  /* SPACINGS */
+  --spaceMD: 1rem;
+  --spaceXS: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --containerWidth: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --containerWidth: 90%;
   }
 }
 
@@ -17,9 +48,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,15 +58,4 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "nortecoins10",
+    "name": "10 CriptoCoins",
+    "formattedPrice": "R$12.00",
+    "price": 12,
+    "city": "valleynorte"
+  },
+  {
+    "id": "nortecoins50",
+    "name": "50 CriptoCoins",
+    "formattedPrice": "R$60.00",
+    "price": 60,
+    "city": "valleynorte"
+  },
+  {
+    "id": "nortecoins300",
+    "name": "300 CriptoCoins",
+    "formattedPrice": "R$360.00",
+    "price": 360,
+    "city": "valleynorte"
+  },
+  {
+    "id": "nortecoins500",
+    "name": "500 CriptoCoins",
+    "formattedPrice": "R$600.00",
+    "price": 600,
+    "city": "valleynorte"
+  },
+  {
+    "id": "nortecoins1000",
+    "name": "1000 CriptoCoins",
+    "formattedPrice": "R$1200.00",
+    "price": 1200,
+    "city": "valleynorte"
+  }
+]

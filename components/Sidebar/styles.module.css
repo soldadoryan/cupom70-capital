@@ -1,0 +1,30 @@
+.aside {
+}
+
+.highlightCard {
+  border: 1px solid var(--primaryO50);
+  width: 350px;
+  height: 220px;
+  padding: var(--spaceXS);
+  border-radius: 0.55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spaceMD);
+
+  h3 {
+    color: var(--textMuted);
+    text-transform: uppercase;
+    letter-spacing: var(--titleSpacing);
+  }
+
+  p {
+    color: var(--textMuted);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .highlightCard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "moradacoins10",
+    "name": "10 CriptoCoins",
+    "formattedPrice": "R$12.00",
+    "price": 12,
+    "city": "moradadovalley"
+  },
+  {
+    "id": "moradacoins50",
+    "name": "50 CriptoCoins",
+    "formattedPrice": "R$60.00",
+    "price": 60,
+    "city": "moradadovalley"
+  },
+  {
+    "id": "moradacoins300",
+    "name": "300 CriptoCoins",
+    "formattedPrice": "R$360.00",
+    "price": 360,
+    "city": "moradadovalley"
+  },
+  {
+    "id": "moradacoins500",
+    "name": "500 CriptoCoins",
+    "formattedPrice": "R$600.00",
+    "price": 600,
+    "city": "moradadovalley"
+  },
+  {
+    "id": "moradacoins1000",
+    "name": "1000 CriptoCoins",
+    "formattedPrice": "R$1200.00",
+    "price": 1200,
+    "city": "moradadovalley"
+  }
+]

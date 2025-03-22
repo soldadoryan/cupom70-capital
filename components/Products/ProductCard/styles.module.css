@@ -1,0 +1,69 @@
+.card {
+  width: 330px;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--spaceXS) * 1.5);
+  gap: var(--spaceMD);
+}
+
+.productImage {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--shape);
+}
+
+.price {
+  width: 100%;
+  color: var(--shape);
+  font-size: 1.25rem;
+}
+
+.buyButton {
+  background-color: var(--transparent);
+  border: 1px solid var(--primary);
+  color: var(--shape);
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  & > span {
+    flex: 1;
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+.buyButtonIcon {
+  background-color: var(--primary);
+  border-radius: 20px;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    width: 100%;
+    padding: var(--spaceXS);
+  }
+}
