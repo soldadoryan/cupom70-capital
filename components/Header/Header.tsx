@@ -2,9 +2,8 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Menu } from "./Menu";
 import { DiscordButton } from "./DiscordButton";
-import { FaShoppingCart } from "react-icons/fa";
+import { CheckoutButton } from "./CheckoutButton";
 import s from "./styles.module.css";
-import Link from "next/link";
 
 export function Header() {
   return (
@@ -21,14 +20,8 @@ export function Header() {
           />
           <div className={s.wrapButtons}>
             <DiscordButton />
-            <Link
-              href="/checkout"
-              className={`${s.headerButton} ${s.checkoutButton}`}
-            >
-              <FaShoppingCart />
-              <span>3</span>
-            </Link>
-            <button className={`${s.headerButton} ${s.actived}`}>Login</button>
+            <CheckoutButton />
+            {/* <button className={`${s.headerButton} ${s.actived}`}>Login</button> */}
           </div>
         </Container>
       </section>

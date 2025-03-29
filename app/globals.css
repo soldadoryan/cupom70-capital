@@ -25,6 +25,7 @@
   --containerWidth: 1140px;
 
   /* SPACINGS */
+  --spaceSM: 0.5rem;
   --spaceMD: 1rem;
   --spaceXS: 1.5rem;
 }

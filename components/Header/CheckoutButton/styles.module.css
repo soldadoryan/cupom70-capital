@@ -1,0 +1,46 @@
+.headerButton {
+  background-color: var(--transparent);
+  height: 40px;
+  padding: 0 var(--spaceMD);
+  border-radius: 20px;
+  border: 1px solid var(--shape);
+  color: var(--shape);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.8rem;
+
+  &.actived {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  & > svg {
+    font-size: 1rem;
+  }
+}
+
+.headerButton:hover {
+  background-color: var(--primaryO20);
+}
+
+.checkoutButton {
+  position: relative;
+}
+
+.checkoutButton span {
+  background-color: var(--success);
+  position: absolute;
+  padding: 0 0.4rem;
+  width: auto;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -5px;
+  right: -5px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
