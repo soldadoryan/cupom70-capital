@@ -7,6 +7,7 @@ export type CartProductType = ProductType & {
 export type CartContextType = {
   products: CartProductType[];
   setProducts: React.Dispatch<React.SetStateAction<CartProductType[]>>;
+  clearProducts: () => void;
 };
 
 export type CartProviderPropsType = {

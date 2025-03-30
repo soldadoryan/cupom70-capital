@@ -95,9 +95,9 @@ export function CartAndResume() {
           window.location.href = response.payment_url;
         }
       } catch (error) {
+        setLoading(false);
         console.error(error);
       }
-      setLoading(false);
     },
     [products]
   );

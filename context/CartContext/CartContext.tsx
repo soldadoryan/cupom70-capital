@@ -28,8 +28,13 @@ export function CartProvider({ children }: CartProviderPropsType) {
     }
   }, [products]);
 
+  const clearProducts = () => {
+    localStorage.setItem("products", JSON.stringify([]));
+    setProducts([]);
+  };
+
   return (
-    <CartContext.Provider value={{ products, setProducts }}>
+    <CartContext.Provider value={{ products, setProducts, clearProducts }}>
       {children}
     </CartContext.Provider>
   );
