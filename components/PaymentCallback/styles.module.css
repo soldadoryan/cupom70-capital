@@ -45,3 +45,7 @@
 .in_process {
   color: var(--primary);
 }
+
+.peding {
+  color: var(--primary);
+}
