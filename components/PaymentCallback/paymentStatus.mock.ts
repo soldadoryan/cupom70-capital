@@ -14,4 +14,9 @@ export const paymentStatus = {
     description:
       "Seu pagamento ainda está em andamento. Temos até 72 horas para validar e aprovar seu pagamento, por isso, espere até o final do prazo antes de solicitar suporte.",
   },
+  pending: {
+    label: "Em andamento",
+    description:
+      "Seu pagamento ainda está em andamento. Temos até 72 horas para validar e aprovar seu pagamento, por isso, espere até o final do prazo antes de solicitar suporte.",
+  },
 };
