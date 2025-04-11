@@ -9,7 +9,7 @@ export function ShopStatus() {
   const pathname = usePathname();
 
   const handleGetShopStatus = async () => {
-    const response = await createRequest({
+    const response: { status: "on" | "off" } = await createRequest({
       url: "/shop-status",
       method: "GET",
     });
