@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { CartProvider } from "@/context/CartContext/CartContext";
-import "./globals.css";
 import { ToastContainer } from "react-toastify";
+import "./globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",

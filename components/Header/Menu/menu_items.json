@@ -1,7 +1,11 @@
 [
   {
     "label": "Início",
-    "href": "/"
+    "href": "/home"
+  },
+  {
+    "label": "Capital City",
+    "href": "/capital-city"
   },
   {
     "label": "Valley Norte",

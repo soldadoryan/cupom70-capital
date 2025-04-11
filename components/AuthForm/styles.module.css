@@ -1,0 +1,49 @@
+.form {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spaceXS);
+}
+
+.logo {
+  margin-bottom: var(--spaceMD);
+}
+
+.input {
+  background-color: var(--primaryO20);
+  border-radius: 5px;
+  border: 1px solid var(--shapeO20);
+  width: 100%;
+  height: 40px;
+  padding: 0 var(--spaceMD);
+  color: var(--shape);
+  outline: none;
+  margin-bottom: var(--sm);
+}
+
+.error {
+  color: var(--error);
+}
+
+.authButton {
+  background-color: var(--primary);
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--shape);
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--spaceSM);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
