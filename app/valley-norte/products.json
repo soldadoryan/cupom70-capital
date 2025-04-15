@@ -28,5 +28,12 @@
     "name": "1000 Coins",
     "price": 360,
     "city": "valleynorte"
+  },
+  {
+    "id": "nortefac",
+    "name": "Org/Fac",
+    "price": 700,
+    "city": "valleynorte",
+    "imgUrl": "/org.webp"
   }
 ]

@@ -10,6 +10,7 @@ import { formatToBRL } from "@/utils/currency";
 
 export function ProductCard({ product }: ProductCardPropsType) {
   const { products, setProducts } = useContext(CartContext);
+  console.log(product);
 
   const handleAddProduct = useCallback(() => {
     const differentCityExists = products.some(
@@ -41,18 +42,22 @@ export function ProductCard({ product }: ProductCardPropsType) {
       <Image
         width={260}
         height={260}
-        src="/coins.webp"
-        alt="Imagem de algumas coins "
-        title="Coins"
+        src={product.imgUrl || "/coins.webp"}
+        alt="Imagem de produto"
+        title="Produto Capital"
         className={s.productImage}
       />
       <h4 className={s.title}>{product.name}</h4>
       <h5 className={s.price}>{formatToBRL(product.price)}</h5>
-      <button onClick={handleAddProduct} className={s.buyButton}>
+      <button
+        disabled={product.stock === 0}
+        onClick={handleAddProduct}
+        className={s.buyButton}
+      >
         <div className={s.buyButtonIcon}>
           <FaCartPlus />
         </div>
-        <span>Comprar agora</span>
+        <span>{product.stock === 0 ? "Esgotado" : "Comprar agora"}</span>
       </button>
     </div>
   );
