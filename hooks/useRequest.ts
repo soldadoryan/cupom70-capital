@@ -5,8 +5,8 @@ type RequestPropsType = {
 };
 
 function useRequest() {
-  // const baseUrl = "https://api.capitalcity.gg";
-  const baseUrl = "http://localhost:3333";
+  const baseUrl = "https://api.capitalcity.gg";
+  // const baseUrl = "http://localhost:3333";
 
   const createRequest = async <T>(request: RequestPropsType): Promise<T> => {
     const response = await fetch(`${baseUrl}${request.url}`, {
