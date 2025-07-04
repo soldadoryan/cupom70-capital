@@ -25,6 +25,13 @@
   font-size: 1.25rem;
 }
 
+.wrapButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .buyButton {
   background-color: var(--transparent);
   border: 1px solid var(--primary);
@@ -58,7 +65,50 @@
 .buyButtonIcon {
   background-color: var(--primary);
   border-radius: 20px;
-  width: 60px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg {
+    font-size: 1.3rem;
+  }
+}
+
+.detailsButton {
+  background-color: var(--transparent);
+  border: 1px solid var(--primary);
+  color: var(--shape);
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  & > span {
+    flex: 1;
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    background-color: var(--primary);
+  }
+  &[disabled]:hover {
+    background-color: var(--transparent);
+  }
+
+  &[disabled] {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+}
+
+.detailsButtonIcon {
+  background-color: var(--primary);
+  border-radius: 20px;
+  width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;

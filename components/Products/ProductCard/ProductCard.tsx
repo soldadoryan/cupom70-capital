@@ -7,6 +7,7 @@ import { useCallback, useContext } from "react";
 import { CartContext } from "@/context/CartContext";
 import { toast } from "react-toastify";
 import { formatToBRL } from "@/utils/currency";
+import { RiInfoI } from "react-icons/ri";
 
 export function ProductCard({ product }: ProductCardPropsType) {
   const { products, setProducts } = useContext(CartContext);
@@ -49,16 +50,30 @@ export function ProductCard({ product }: ProductCardPropsType) {
       />
       <h4 className={s.title}>{product.name}</h4>
       <h5 className={s.price}>{formatToBRL(product.price)}</h5>
-      <button
-        disabled={product.stock === 0}
-        onClick={handleAddProduct}
-        className={s.buyButton}
-      >
-        <div className={s.buyButtonIcon}>
-          <FaCartPlus />
-        </div>
-        <span>{product.stock === 0 ? "Esgotado" : "Comprar agora"}</span>
-      </button>
+      <div className={s.wrapButtons}>
+        <button
+          disabled={product.stock === 0}
+          onClick={handleAddProduct}
+          className={s.buyButton}
+        >
+          <div className={s.buyButtonIcon}>
+            <FaCartPlus />
+          </div>
+          <span>{product.stock === 0 ? "Esgotado" : "Comprar agora"}</span>
+        </button>
+        {product.description && (
+          <button
+            disabled={product.stock === 0}
+            className={s.detailsButton}
+            onClick={() => window.open(product.description, "_blank")}
+            title="Ver detalhes do produto"
+          >
+            <div className={s.detailsButtonIcon}>
+              <RiInfoI />
+            </div>
+          </button>
+        )}
+      </div>
     </div>
   );
 }
