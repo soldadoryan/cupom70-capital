@@ -46,7 +46,7 @@
   },
   {
     "id": "nortefacgun",
-    "name": "Org/Fac",
+    "name": "Fac de armas",
     "price": 1400,
     "city": "valleynorte",
     "imgUrl": "/org.webp"
