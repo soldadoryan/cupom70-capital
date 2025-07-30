@@ -43,5 +43,12 @@
     "price": 700,
     "city": "valleynorte",
     "imgUrl": "/org.webp"
+  },
+  {
+    "id": "nortefacgun",
+    "name": "Org/Fac",
+    "price": 1400,
+    "city": "valleynorte",
+    "imgUrl": "/org.webp"
   }
 ]
