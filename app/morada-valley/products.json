@@ -43,5 +43,12 @@
     "price": 700,
     "city": "moradadovalley",
     "imgUrl": "/org.webp"
+  },
+  {
+    "id": "moradafacgun",
+    "name": "Fac de armas",
+    "price": 1400,
+    "city": "moradadovalley",
+    "imgUrl": "/org.webp"
   }
 ]
