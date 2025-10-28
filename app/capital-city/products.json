@@ -1,5 +1,37 @@
 [
   {
+    "id": "bunkert1",
+    "name": "Bunker Tier 1",
+    "price": 450,
+    "city": "capitalcity",
+    "description": "/bunkers",
+    "imgUrl": "/bunkers.png"
+  },
+  {
+    "id": "bunkert2",
+    "name": "Bunker Tier 2",
+    "price": 900,
+    "city": "capitalcity",
+    "description": "/bunkers",
+    "imgUrl": "/bunkers.png"
+  },
+  {
+    "id": "bunkert3",
+    "name": "Bunker Tier 3",
+    "price": 1350,
+    "city": "capitalcity",
+    "description": "/bunkers",
+    "imgUrl": "/bunkers.png"
+  },
+  {
+    "id": "bunkert4",
+    "name": "Bunker Tier 4",
+    "price": 2100,
+    "city": "capitalcity",
+    "description": "/bunkers",
+    "imgUrl": "/bunkers.png"
+  },
+  {
     "id": "primecapital",
     "name": "Prime Fac (30 dias)",
     "price": 1750,
