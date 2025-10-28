@@ -93,7 +93,7 @@ export default function Bunkers() {
               <br />
             </p>
             <Image
-              src="/bunkers.png"
+              src="/tier1.jpg"
               className={s.bunkerImage}
               alt="Bunkers"
               width={500}
@@ -214,7 +214,7 @@ export default function Bunkers() {
               <br />
             </p>
             <Image
-              src="/bunkers.png"
+              src="/tier2.jpg"
               className={s.bunkerImage}
               alt="Bunkers"
               width={500}
@@ -362,7 +362,7 @@ export default function Bunkers() {
               <br />
             </p>
             <Image
-              src="/bunkers.png"
+              src="/tier3.jpg"
               className={s.bunkerImage}
               alt="Bunkers"
               width={500}
@@ -526,7 +526,7 @@ export default function Bunkers() {
               <br />
             </p>
             <Image
-              src="/bunkers.png"
+              src="/tier4.png"
               className={s.bunkerImage}
               alt="Bunkers"
               width={500}
