@@ -30,6 +30,14 @@
   color: var(--primary);
 }
 
+.main ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceXS);
+  color: var(--shape);
+  margin-bottom: calc(var(--spaceXS) * 2) ;
+}
+
 .main h2 {
   color: var(--shape);
 }

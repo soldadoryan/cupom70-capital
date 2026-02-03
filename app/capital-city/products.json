@@ -1,5 +1,21 @@
 [
   {
+    "id": "al_fac_capital",
+    "name": "AL Fac (Fac/Org)",
+    "price": 1500,
+    "city": "capitalcity",
+    "description": "/al-prioritaria-fac",
+    "imgUrl": "/al-fac.webp"
+  },
+  {
+    "id": "atualizacao_qg_capital",
+    "name": "Atualização de QG",
+    "price": 1500,
+    "city": "capitalcity",
+    "description": "/atualizacao-qg",
+    "imgUrl": "/atualizacao_qg.webp"
+  },
+  {
     "id": "primecapital",
     "name": "Prime Fac (30 dias)",
     "price": 1750,
