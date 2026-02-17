@@ -1,5 +1,20 @@
 [
   {
+    "id": "capitalalterarnome",
+    "name": "Alterar Nome FAC",
+    "price": 400,
+    "city": "capitalcity",
+    "imgUrl": "/alterarnome.png"
+  },
+  {
+    "id": "capitalsinuca",
+    "name": "Mesa de Sinuca",
+    "price": 150,
+    "city": "capitalcity",
+    "description": "/sinuca",
+    "imgUrl": "/sinuca.png"
+  },
+  {
     "id": "al_fac_capital",
     "name": "AL Fac (Fac/Org)",
     "price": 1500,

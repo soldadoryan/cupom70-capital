@@ -1,5 +1,20 @@
 [
   {
+    "id": "valleysulalterarnome",
+    "name": "Alterar Nome FAC",
+    "price": 400,
+    "city": "valleysul",
+    "imgUrl": "/alterarnome.png"
+  },
+  {
+    "id": "valleysulsinuca",
+    "name": "Mesa de Sinuca",
+    "price": 150,
+    "city": "valleysul",
+    "description": "/sinuca",
+    "imgUrl": "/sinuca.png"
+  },
+  {
     "id": "primevalleysul",
     "name": "Prime Fac (30 dias)",
     "price": 1750,
