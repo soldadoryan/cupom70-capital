@@ -57,6 +57,7 @@
     "name": "Org/Fac",
     "price": 700,
     "city": "valleysul",
+    "description": "/termo-faccao",
     "imgUrl": "/org.webp"
   }
 ]

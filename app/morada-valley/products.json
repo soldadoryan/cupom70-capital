@@ -57,13 +57,15 @@
     "name": "Org/Fac",
     "price": 700,
     "city": "moradadovalley",
+    "description": "/termo-faccao",
     "imgUrl": "/org.webp"
   },
   {
     "id": "moradafacgun",
     "name": "Fac de armas",
-    "price": 1400,
+    "price": 2000,
     "city": "moradadovalley",
+    "description": "/termo-faccao",
     "imgUrl": "/org.webp"
   }
 ]

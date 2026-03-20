@@ -57,13 +57,15 @@
     "name": "Org/Fac",
     "price": 700,
     "city": "valleynorte",
+    "description": "/termo-faccao",
     "imgUrl": "/org.webp"
   },
   {
     "id": "nortefacgun",
     "name": "Fac de armas",
-    "price": 1400,
+    "price": 2000,
     "city": "valleynorte",
+    "description": "/termo-faccao",
     "imgUrl": "/org.webp"
   }
 ]

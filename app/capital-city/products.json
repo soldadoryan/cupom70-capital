@@ -1,5 +1,12 @@
 [
   {
+    "id": "capitalveiculoprime",
+    "name": "Veículo Prime (30 dias) (Abra Ticket)",
+    "price": 5000,
+    "city": "capitalcity",
+    "imgUrl": "/veiculoprime.png"
+  },
+  {
     "id": "capitalalterarnome",
     "name": "Alterar Nome FAC",
     "price": 400,
