@@ -44,7 +44,7 @@ export default function TermoFaccao() {
 
             <p><strong>1.3.</strong> A compra do produto não concede autonomia absoluta sobre a organização, permanecendo a <strong>administração do servidor responsável pelo equilíbrio, manutenção e organização do ambiente de jogo</strong>. Todos esses elementos permanecem sob titularidade e controle exclusivo da administração do servidor e do Grupo Capital.</p>
 
-            <p><strong>1.4.</strong> A transferência de liderança da organização fica condicionada exclusivamente à aquisição do item <strong>"Troca de Líder"</strong>.</p>
+            <p><strong>1.4.</strong> A transferência de liderança da organização fica condicionada exclusivamente à aquisição do item <strong>&ldquo;Troca de Líder&rdquo;</strong>.</p>
 
             <hr />
 
