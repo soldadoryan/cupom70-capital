@@ -1,5 +1,13 @@
 [
   {
+    "id": "al_automatica_capital",
+    "name": "AL Automática",
+    "price": 269,
+    "city": "capitalcity",
+    "description": "/al-automatica",
+    "imgUrl": "/al_automatica.png"
+  },
+  {
     "id": "capitalveiculoprime",
     "name": "Veículo Prime (30 dias) (Abra Ticket)",
     "price": 5000,
@@ -20,13 +28,6 @@
     "city": "capitalcity",
     "description": "/sinuca",
     "imgUrl": "/sinuca.png"
-  },
-  {
-    "id": "al_automatica_capital",
-    "name": "AL Automática",
-    "price": 269,
-    "city": "capitalcity",
-    "imgUrl": "/al-fac.webp"
   },
   {
     "id": "al_fac_capital",
