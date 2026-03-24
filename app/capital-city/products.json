@@ -22,6 +22,13 @@
     "imgUrl": "/sinuca.png"
   },
   {
+    "id": "al_automatica_capital",
+    "name": "AL Automática",
+    "price": 269,
+    "city": "capitalcity",
+    "imgUrl": "/al-fac.webp"
+  },
+  {
     "id": "al_fac_capital",
     "name": "AL Fac (Fac/Org)",
     "price": 1500,

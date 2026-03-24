@@ -2,6 +2,7 @@ import { ProductType } from "@/components/Products/Products.type";
 
 export type CartProductType = ProductType & {
   quantity?: number;
+  wlId?: string;
 };
 
 export type CartContextType = {

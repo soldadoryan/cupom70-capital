@@ -48,39 +48,48 @@ function isValidCPF(cpf: string): boolean {
   return true;
 }
 
-const schema = yup
-  .object({
-    userId: yup
-      .number()
-      .typeError("O ID precisa ser um número válido!")
-      .required("O ID do personagem é obrigatório!"),
-    email: yup
-      .string()
-      .email("Digite um e-mail válido!")
-      .required("O e-mail é obrigatório!"),
-    discordTag: yup.string().required("A tag do Discord é obrigatória!"),
-    nomeCompleto: yup
-      .string()
-      .required("O nome completo é obrigatório!")
-      .min(3, "O nome deve ter pelo menos 3 caracteres!"),
-    cpf: yup
-      .string()
-      .required("O CPF é obrigatório!")
-      .test("cpf-valid", "CPF inválido!", (value) =>
-        value ? isValidCPF(value) : false,
-      ),
-    cep: yup
-      .string()
-      .required("O CEP é obrigatório!")
-      .test("cep-valid", "CEP inválido!", (value) =>
-        value ? value.replace(/\D/g, "").length === 8 : false,
-      ),
-    estado: yup.string().required("O estado é obrigatório!"),
-    cidade: yup.string().required("A cidade é obrigatória!"),
-    endereco: yup.string().required("O endereço é obrigatório!"),
-    numero: yup.string().required("O número é obrigatório!"),
-  })
-  .required();
+const getSchema = (hasAlAutomatica: boolean) =>
+  yup
+    .object({
+      userId: hasAlAutomatica
+        ? yup
+            .number()
+            .typeError("O ID precisa ser um número válido!")
+            .transform((value, original) =>
+              original === "" || original === undefined ? 0 : value,
+            )
+            .default(0)
+        : yup
+            .number()
+            .typeError("O ID precisa ser um número válido!")
+            .required("O ID do personagem é obrigatório!"),
+      email: yup
+        .string()
+        .email("Digite um e-mail válido!")
+        .required("O e-mail é obrigatório!"),
+      discordTag: yup.string().required("A tag do Discord é obrigatória!"),
+      nomeCompleto: yup
+        .string()
+        .required("O nome completo é obrigatório!")
+        .min(3, "O nome deve ter pelo menos 3 caracteres!"),
+      cpf: yup
+        .string()
+        .required("O CPF é obrigatório!")
+        .test("cpf-valid", "CPF inválido!", (value) =>
+          value ? isValidCPF(value) : false,
+        ),
+      cep: yup
+        .string()
+        .required("O CEP é obrigatório!")
+        .test("cep-valid", "CEP inválido!", (value) =>
+          value ? value.replace(/\D/g, "").length === 8 : false,
+        ),
+      estado: yup.string().required("O estado é obrigatório!"),
+      cidade: yup.string().required("A cidade é obrigatória!"),
+      endereco: yup.string().required("O endereço é obrigatório!"),
+      numero: yup.string().required("O número é obrigatório!"),
+    })
+    .required();
 
 export function CartAndResume() {
   const { products, setProducts } = useContext(CartContext);
@@ -88,6 +97,12 @@ export function CartAndResume() {
   const [cepLoading, setCepLoading] = useState(false);
   const [buyerIp, setBuyerIp] = useState("");
   const { createRequest } = useRequest();
+
+  const hasAlAutomatica = useMemo(() => {
+    return products.some((p) => p.id === "al_automatica_capital");
+  }, [products]);
+
+  const schema = useMemo(() => getSchema(hasAlAutomatica), [hasAlAutomatica]);
 
   const {
     register,
@@ -159,6 +174,14 @@ export function CartAndResume() {
     }, 0);
   }, [products]);
 
+  const setProductWlId = (productId: string, wlId: string) => {
+    setProducts((oldProducts) =>
+      oldProducts.map((product) =>
+        product.id === productId ? { ...product, wlId } : product,
+      ),
+    );
+  };
+
   const totalPrice = useMemo(() => {
     return products.reduce((total, prod) => {
       const quantity = prod.quantity ?? 0;
@@ -169,6 +192,13 @@ export function CartAndResume() {
 
   const handlePaymentSubmit = useCallback(
     async (data: PaymentFormType) => {
+      const alAutomatica = products.find(
+        (p) => p.id === "al_automatica_capital",
+      );
+      if (alAutomatica && !alAutomatica.wlId?.trim()) {
+        alert("O ID de WL é obrigatório para o produto AL Automática!");
+        return;
+      }
       setLoading(true);
       const {
         userId,
@@ -290,17 +320,40 @@ export function CartAndResume() {
             onSubmit={handleSubmit(handlePaymentSubmit)}
             className={s.formUserInfo}
           >
-            <label className={s.labelResume}>Id do Personagem</label>
-            <input
-              className={s.inputInfo}
-              type="number"
-              {...register("userId", {
-                required: "Id do Personagem é obrigatório",
-              })}
-              autoComplete="off"
-            />
-            {errors.userId && (
-              <span className={s.errorSpan}>{errors.userId?.message}</span>
+            {!hasAlAutomatica && (
+              <>
+                <label className={s.labelResume}>Id do Personagem</label>
+                <input
+                  className={s.inputInfo}
+                  type="number"
+                  {...register("userId", {
+                    required: "Id do Personagem é obrigatório",
+                  })}
+                  autoComplete="off"
+                />
+                {errors.userId && (
+                  <span className={s.errorSpan}>{errors.userId?.message}</span>
+                )}
+              </>
+            )}
+
+            {hasAlAutomatica && (
+              <>
+                <label className={s.labelResume}>ID de WL</label>
+                <input
+                  className={s.inputInfo}
+                  type="text"
+                  placeholder="Digite o ID de WL"
+                  value={
+                    products.find((p) => p.id === "al_automatica_capital")
+                      ?.wlId || ""
+                  }
+                  onChange={(e) =>
+                    setProductWlId("al_automatica_capital", e.target.value)
+                  }
+                  autoComplete="off"
+                />
+              </>
             )}
 
             <label className={s.labelResume}>Nome Completo</label>
