@@ -51,6 +51,10 @@ export default function AlPrime() {
               possuem whitelist aprovada. Compras realizadas por jogadores
               nessas condições não serão reembolsadas.
             </div>
+            <div className={s.warning}>
+              ATENÇÃO: Este produto é apenas para jogadores maiores de de 18
+              anos.
+            </div>
           </main>
           <div className={s.wrapResume}>
             <Sidebar />

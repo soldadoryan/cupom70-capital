@@ -41,7 +41,11 @@
   color: #ff4d4d;
   font-weight: bold;
   line-height: 1.6;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 4rem;
+  }
 }
 
 .wrapResume {
