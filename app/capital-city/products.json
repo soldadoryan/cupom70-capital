@@ -1,10 +1,10 @@
 [
   {
     "id": "al_automatica_capital",
-    "name": "AL Automática",
+    "name": "AL Prime",
     "price": 269,
     "city": "capitalcity",
-    "description": "/al-automatica",
+    "description": "/al-prime",
     "imgUrl": "/al_automatica.png"
   },
   {

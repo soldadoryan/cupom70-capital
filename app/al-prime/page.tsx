@@ -5,17 +5,17 @@ import s from "./page.module.css";
 import { Sidebar } from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "Capital City | AL Automática",
+  title: "Capital City | AL Prime",
 };
 
-export default function AlAutomatica() {
+export default function AlPrime() {
   return (
     <>
       <PageStructure>
         <Container customClass={s.customContainer}>
           <main className={s.main}>
             <h2 className={s.title}>
-              <span>AL Automática</span>
+              <span>AL Prime</span>
             </h2>
             <p>
               <b>- Aprovação Instantânea:</b> Ao realizar a compra, sua
@@ -24,7 +24,7 @@ export default function AlAutomatica() {
               <br />
               <br />
               <b>- VIP Capital:</b> Ao entrar no servidor, utilize o comando{" "}
-              <b>&quot;/al_automatica&quot;</b> para receber seu VIP Capital como
+              <b>&quot;/alprime&quot;</b> para receber seu VIP Capital como
               bônus exclusivo da AL Automática.
               <br />
               <br />
@@ -38,7 +38,7 @@ export default function AlAutomatica() {
               <br />
               4. Sua whitelist será aprovada automaticamente;
               <br />
-              5. Entre no servidor e use <b>/al_automatica</b> para receber seu VIP
+              5. Entre no servidor e use <b>/alprime</b> para receber seu VIP
               Capital.
               <br />
               <br />
