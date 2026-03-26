@@ -286,3 +286,67 @@
   animation: loading 1s linear forwards infinite;
   font-size: 1.5rem;
 }
+
+.discordLoginButton {
+  background-color: #5865f2;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--spaceMD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  margin-bottom: var(--sm);
+}
+
+.discordLoginButton:hover {
+  background-color: #4752c4;
+}
+
+.discordLoginButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.discordLoginButton svg {
+  font-size: 1.2rem;
+}
+
+.discordLoggedIn {
+  background-color: var(--primaryO20);
+  border-radius: 5px;
+  border: 1px solid #5865f2;
+  height: 40px;
+  padding: 0 var(--spaceMD);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--shape);
+  font-size: 0.85rem;
+  margin-bottom: var(--sm);
+}
+
+.discordLoggedIn svg {
+  color: #5865f2;
+  font-size: 1.1rem;
+}
+
+.discordLoggedIn strong {
+  color: #5865f2;
+}
+
+.discordChangeButton {
+  background: none;
+  border: none;
+  color: var(--textMuted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin-left: auto;
+  text-decoration: underline;
+}

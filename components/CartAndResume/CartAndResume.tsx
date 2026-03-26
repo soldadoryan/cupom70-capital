@@ -11,6 +11,7 @@ import * as yup from "yup";
 import { FiX } from "react-icons/fi";
 import { RiArrowUpSLine, RiArrowDownSLine } from "react-icons/ri";
 import { AiOutlineLoading } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
 import s from "./styles.module.css";
 
 function formatCPF(value: string): string {
@@ -91,11 +92,19 @@ const getSchema = (hasAlAutomatica: boolean) =>
     })
     .required();
 
+type DiscordUser = {
+  id: string;
+  username: string;
+  global_name: string | null;
+};
+
 export function CartAndResume() {
   const { products, setProducts } = useContext(CartContext);
   const [loading, setLoading] = useState(false);
   const [cepLoading, setCepLoading] = useState(false);
   const [buyerIp, setBuyerIp] = useState("");
+  const [discordUser, setDiscordUser] = useState<DiscordUser | null>(null);
+  const [discordLoading, setDiscordLoading] = useState(false);
   const { createRequest } = useRequest();
 
   const hasAlAutomatica = useMemo(() => {
@@ -155,6 +164,60 @@ export function CartAndResume() {
       .finally(() => setCepLoading(false));
   }, [cepValue, setValue]);
 
+  // Discord OAuth popup listener
+  useEffect(() => {
+    const handleMessage = async (event: MessageEvent) => {
+      if (event.data?.type !== "discord-oauth" || !event.data.code) return;
+
+      setDiscordLoading(true);
+      try {
+        const response = await createRequest<DiscordUser>({
+          url: "/discord/exchange",
+          method: "POST",
+          body: {
+            code: event.data.code,
+            redirectUri: `${window.location.origin}/discord/callback`,
+          },
+        });
+
+        if (response.id) {
+          setDiscordUser(response);
+          setValue("discordTag", response.global_name || response.username, {
+            shouldValidate: true,
+          });
+        }
+      } catch (error) {
+        console.error("Erro ao autenticar com Discord:", error);
+        alert("Erro ao autenticar com Discord. Tente novamente.");
+      } finally {
+        setDiscordLoading(false);
+      }
+    };
+
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, [createRequest, setValue]);
+
+  const handleDiscordLogin = () => {
+    const clientId = process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID;
+    const redirectUri = encodeURIComponent(
+      `${window.location.origin}/discord/callback`
+    );
+    const scope = "identify";
+    const url = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scope}`;
+
+    const width = 500;
+    const height = 700;
+    const left = window.screenX + (window.outerWidth - width) / 2;
+    const top = window.screenY + (window.outerHeight - height) / 2;
+
+    window.open(
+      url,
+      "discord-oauth",
+      `width=${width},height=${height},left=${left},top=${top}`
+    );
+  };
+
   const setProductQuantity = (productId: string, value: string) => {
     const quantity = parseInt(value, 10);
     if (!isNaN(quantity) && quantity >= 0) {
@@ -199,6 +262,12 @@ export function CartAndResume() {
         alert("O ID de WL é obrigatório para o produto AL Automática!");
         return;
       }
+      if (alAutomatica && !discordUser) {
+        alert(
+          "É obrigatório logar com o Discord para comprar a AL Prime!",
+        );
+        return;
+      }
       setLoading(true);
       const {
         userId,
@@ -213,7 +282,6 @@ export function CartAndResume() {
         numero,
       } = data;
       try {
-
         const response = await createRequest<CreatePreferenceType>({
           url: "/create-preference",
           method: "POST",
@@ -230,6 +298,7 @@ export function CartAndResume() {
             numero,
             ip: buyerIp,
             products,
+            ...(discordUser ? { discordId: discordUser.id } : {}),
           },
         });
 
@@ -242,7 +311,7 @@ export function CartAndResume() {
         console.error(error);
       }
     },
-    [products, buyerIp],
+    [products, buyerIp, discordUser],
   );
 
   return (
@@ -397,14 +466,63 @@ export function CartAndResume() {
               <span className={s.errorSpan}>{errors.email?.message}</span>
             )}
             <label className={s.labelResume}>Tag do Discord</label>
-            <input
-              className={s.inputInfo}
-              type="text"
-              {...register("discordTag")}
-              autoComplete="off"
-            />
-            {errors.discordTag && (
-              <span className={s.errorSpan}>{errors.discordTag?.message}</span>
+            {hasAlAutomatica ? (
+              <>
+                {discordUser ? (
+                  <div className={s.discordLoggedIn}>
+                    <FaDiscord />
+                    <span>
+                      Logado como{" "}
+                      <strong>
+                        {discordUser.global_name || discordUser.username}
+                      </strong>
+                    </span>
+                    <button
+                      type="button"
+                      className={s.discordChangeButton}
+                      onClick={handleDiscordLogin}
+                    >
+                      Trocar
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    type="button"
+                    className={s.discordLoginButton}
+                    onClick={handleDiscordLogin}
+                    disabled={discordLoading}
+                  >
+                    {discordLoading ? (
+                      <AiOutlineLoading className={s.loading} />
+                    ) : (
+                      <>
+                        <FaDiscord />
+                        Logar com Discord
+                      </>
+                    )}
+                  </button>
+                )}
+                <input type="hidden" {...register("discordTag")} />
+                {!discordUser && (
+                  <span className={s.errorSpan}>
+                    Login com Discord obrigatorio para AL Prime
+                  </span>
+                )}
+              </>
+            ) : (
+              <>
+                <input
+                  className={s.inputInfo}
+                  type="text"
+                  {...register("discordTag")}
+                  autoComplete="off"
+                />
+                {errors.discordTag && (
+                  <span className={s.errorSpan}>
+                    {errors.discordTag?.message}
+                  </span>
+                )}
+              </>
             )}
 
             <label className={s.labelResume}>CEP</label>
