@@ -1,8 +1,16 @@
 [
   {
+    "id": "valleyamarracao",
+    "name": "Retirada Amarração",
+    "price": 99,
+    "city": "valleynorte",
+    "description": "/amarracao",
+    "imgUrl": "/amarracao.png"
+  },
+  {
     "id": "valleyunbanauto",
     "name": "Unban Automático",
-    "price": 150,
+    "price": 199,
     "city": "valleynorte",
     "description": "/unban-auto",
     "imgUrl": "/unbanauto.png"

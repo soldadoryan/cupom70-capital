@@ -1,5 +1,13 @@
 [
   {
+    "id": "moradaamarracao",
+    "name": "Retirada Amarração",
+    "price": 99,
+    "city": "moradadovalley",
+    "description": "/amarracao",
+    "imgUrl": "/amarracao.png"
+  },
+  {
     "id": "moradaunbanauto",
     "name": "Unban Automático",
     "price": 150,

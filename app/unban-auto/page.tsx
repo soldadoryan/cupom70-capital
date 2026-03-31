@@ -37,9 +37,7 @@ export default function UnbanAuto() {
                 banida para que o sistema identifique corretamente o jogador.
               </li>
               <li>
-                O produto não cobre casos de ban permanente por cheats ou
-                exploits graves. Consulte as regras do servidor antes de
-                adquirir.
+                O produto não oferece cobertura em casos de banimento decorrentes de atitudes preconceituosas ou uso de ferramentas ilegais.
               </li>
             </ul>
           </main>

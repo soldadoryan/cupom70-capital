@@ -1,5 +1,13 @@
 [
   {
+    "id": "capitalamarracao",
+    "name": "Retirada Amarração",
+    "price": 250,
+    "city": "capitalcity",
+    "description": "/amarracao",
+    "imgUrl": "/amarracao.png"
+  },
+  {
     "id": "al_automatica_capital",
     "name": "AL Prime",
     "price": 269,
