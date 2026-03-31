@@ -1,5 +1,13 @@
 [
   {
+    "id": "moradaunbanauto",
+    "name": "Unban Automático",
+    "price": 150,
+    "city": "moradadovalley",
+    "description": "/unban-auto",
+    "imgUrl": "/unbanauto.png"
+  },
+  {
     "id": "moradaalterarnome",
     "name": "Alterar Nome FAC",
     "price": 400,
@@ -9,7 +17,7 @@
   {
     "id": "moradasinuca",
     "name": "Mesa de Sinuca",
-    "price": 150,
+    "price": 350,
     "city": "moradadovalley",
     "description": "/sinuca",
     "imgUrl": "/sinuca.png"

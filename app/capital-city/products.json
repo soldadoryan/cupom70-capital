@@ -24,7 +24,7 @@
   {
     "id": "capitalsinuca",
     "name": "Mesa de Sinuca",
-    "price": 150,
+    "price": 350,
     "city": "capitalcity",
     "description": "/sinuca",
     "imgUrl": "/sinuca.png"

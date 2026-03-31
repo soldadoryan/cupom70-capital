@@ -5,7 +5,7 @@ import s from "./page.module.css";
 import { Sidebar } from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "Capital City | Al Prioritária (Fac/Org)",
+  title: "Capital City | Sinuca",
 };
 
 export default function Sinuca() {
@@ -19,7 +19,7 @@ export default function Sinuca() {
             </h2>
             <p>
               Adquira este produto e libere o sistema de sinuca na sua
-              organização/facção por 30 dias.
+              organização/facção.
             </p>
             <p>
               Ao contratar, você garante a instalação de uma mesa personalizada
@@ -27,17 +27,11 @@ export default function Sinuca() {
               grupo.
             </p>
             <p>
-              Para ativar o período de 1 mês + mesa personalizada, abra um
-              ticket, anexe o comprovante de pagamento e solicite a liberação à
-              equipe.
+              Para ativar a sinuca na sua mesa personalizada, abra um ticket,
+              anexe o comprovante de pagamento e solicite a liberação à equipe.
             </p>
             <h3>Importante:</h3>
             <ul>
-              <li>
-                Após os 30 dias, a mesa permanecerá posicionada no local, porém
-                o acesso ao sistema será bloqueado até que o produto seja
-                adquirido novamente.
-              </li>
               <li>
                 Qualquer player poderá utilizar o sistema desde que possua a
                 “Ficha de Sinuca”, vendida na padaria. O pagamento refere-se à
