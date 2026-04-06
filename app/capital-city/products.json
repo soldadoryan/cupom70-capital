@@ -16,6 +16,46 @@
     "imgUrl": "/al_automatica.png"
   },
   {
+    "id": "facarmacapital7k",
+    "name": "Fac (G3/SUB/PT)",
+    "price": 7000,
+    "city": "capitalcity",
+    "description": "/termo-faccao",
+    "imgUrl": "/org.webp"
+  },
+  {
+    "id": "facmunicapital6k",
+    "name": "Fac Munição",
+    "price": 6000,
+    "city": "capitalcity",
+    "description": "/termo-faccao",
+    "imgUrl": "/org.webp"
+  },
+  {
+    "id": "facdesmanchecapital5k",
+    "name": "Fac (Desmanche/Colete)",
+    "price": 5000,
+    "city": "capitalcity",
+    "description": "/termo-faccao",
+    "imgUrl": "/org.webp"
+  },
+  {
+    "id": "facc4capital4k8",
+    "name": "Fac (C4/Algema)",
+    "price": 4800,
+    "city": "capitalcity",
+    "description": "/termo-faccao",
+    "imgUrl": "/org.webp"
+  },
+  {
+    "id": "faclivrecapital4k5",
+    "name": "Fac Produto Custom",
+    "price": 4500,
+    "city": "capitalcity",
+    "description": "/termo-faccao",
+    "imgUrl": "/org.webp"
+  },
+  {
     "id": "capitalveiculoprime",
     "name": "Veículo Prime (30 dias) (Abra Ticket)",
     "price": 5000,
