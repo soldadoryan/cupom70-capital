@@ -43,6 +43,7 @@ export function AdminLinkForm() {
   const [city, setCity] = useState("");
   const [selectedProducts, setSelectedProducts] = useState<SelectedProduct[]>([]);
   const [valorDoLink, setValorDoLink] = useState("");
+  const [descricao, setDescricao] = useState("");
   const [loading, setLoading] = useState(false);
   const [paymentUrl, setPaymentUrl] = useState("");
 
@@ -114,21 +115,11 @@ export function AdminLinkForm() {
     });
   };
 
-  const roundToMultipleOf250 = (value: number): number => {
-    if (value <= 0) return 0;
-    return Math.floor(value / 250) * 250;
-  };
-
   const handleValorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value.replace(/\D/g, "");
     if (!raw) { setValorDoLink(""); return; }
     const num = Math.min(parseInt(raw, 10), 10000);
     setValorDoLink(String(num));
-  };
-
-  const handleValorBlur = () => {
-    const num = parseInt(valorDoLink, 10);
-    if (!isNaN(num)) setValorDoLink(String(roundToMultipleOf250(num)));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -138,8 +129,8 @@ export function AdminLinkForm() {
     if (!city) { toast.warning("Selecione uma cidade."); return; }
     if (selectedProducts.length === 0) { toast.warning("Selecione pelo menos um produto."); return; }
 
-    const valor = roundToMultipleOf250(parseInt(valorDoLink, 10) || 0);
-    if (valor <= 0) { toast.warning("Informe um valor válido para o link (múltiplo de 250, máx 10.000)."); return; }
+    const valor = parseInt(valorDoLink, 10) || 0;
+    if (valor <= 0) { toast.warning("Informe um valor válido para o link."); return; }
 
     setLoading(true);
     setPaymentUrl("");
@@ -155,6 +146,7 @@ export function AdminLinkForm() {
           city,
           products: selectedProducts.map((p) => ({ id: p.id, quantity: p.quantity })),
           valorDoLink: valor,
+          descricao: descricao.trim() || undefined,
         },
       });
 
@@ -170,8 +162,6 @@ export function AdminLinkForm() {
   };
 
   const availableProducts = city ? CITY_PRODUCTS[city] || [] : [];
-  const valorNum = parseInt(valorDoLink, 10);
-  const valorAjustado = !isNaN(valorNum) && valorNum > 0 ? roundToMultipleOf250(valorNum) : null;
 
   if (!discordUser) {
     return (
@@ -312,18 +302,24 @@ export function AdminLinkForm() {
             className={s.input}
             value={valorDoLink}
             onChange={handleValorChange}
-            onBlur={handleValorBlur}
-            placeholder="Múltiplo de 250, máx. R$ 10.000"
-            min={0}
+            placeholder="Valor em R$ (máx. R$ 10.000)"
+            min={1}
             max={10000}
-            step={250}
+            step={1}
             autoComplete="off"
           />
-          {valorAjustado !== null && valorAjustado !== valorNum && (
-            <small className={s.valorHint}>
-              Será ajustado para: R$ {valorAjustado.toFixed(2)}
-            </small>
-          )}
+        </div>
+
+        <div className={s.fieldGroup}>
+          <label className={s.fieldLabel}>Descrição (opcional)</label>
+          <input
+            type="text"
+            className={s.input}
+            value={descricao}
+            onChange={(e) => setDescricao(e.target.value)}
+            placeholder="Ex: Produto especial, observação..."
+            autoComplete="off"
+          />
         </div>
 
         {paymentUrl && (
