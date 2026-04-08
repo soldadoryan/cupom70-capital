@@ -93,7 +93,7 @@ export default function TermoFaccao() {
             <ul>
               <li>
                 A organização deverá manter{" "}
-                <strong>mínimo de 15 membros cadastrados no painel</strong>;
+                <strong>mínimo de 20 membros cadastrados no painel</strong>;
               </li>
               <li>
                 Caso o número mínimo não seja mantido, a equipe administrativa
