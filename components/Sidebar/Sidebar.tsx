@@ -1,4 +1,5 @@
 import s from "./styles.module.css";
+import { AdminLinkForm } from "../AdminLinkForm/AdminLinkForm";
 
 export function Sidebar() {
   return (
@@ -10,6 +11,7 @@ export function Sidebar() {
           esqueça de selecionar a cidade correta e adicionar seu ID.
         </p>
       </div>
+      <AdminLinkForm />
     </section>
   );
 }

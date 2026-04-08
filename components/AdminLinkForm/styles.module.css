@@ -1,0 +1,300 @@
+.adminCard {
+  border: 1px solid var(--primaryO50);
+  width: 350px;
+  padding: var(--spaceXS);
+  border-radius: 0.55rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceMD);
+  margin-top: var(--spaceMD);
+}
+
+.adminCard h3 {
+  color: var(--textMuted);
+  text-transform: uppercase;
+  letter-spacing: var(--titleSpacing);
+}
+
+.adminHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.adminDesc {
+  color: var(--textMuted);
+  font-size: 0.85rem;
+}
+
+.loggedAs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--textMuted);
+}
+
+.discordIcon {
+  color: #5865f2;
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceSM);
+}
+
+.fieldLabel {
+  color: var(--textMuted);
+  font-size: 0.8rem;
+}
+
+.selectedCount {
+  color: var(--primary);
+  font-size: 0.75rem;
+}
+
+.radioGroup {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.radioGroup legend {
+  color: var(--textMuted);
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--textMuted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.radioLabel input[type="radio"] {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.input {
+  background-color: var(--primaryO20);
+  border-radius: 5px;
+  border: 1px solid var(--shapeO20);
+  width: 100%;
+  height: 38px;
+  padding: 0 var(--spaceMD);
+  color: var(--shape);
+  outline: none;
+  font-size: 0.85rem;
+}
+
+.input:focus {
+  border-color: var(--primary);
+}
+
+/* Remove number input arrows */
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.select {
+  background-color: var(--primaryO20);
+  border-radius: 5px;
+  border: 1px solid var(--shapeO20);
+  width: 100%;
+  height: 38px;
+  padding: 0 var(--spaceMD);
+  color: var(--shape);
+  outline: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.select:focus {
+  border-color: var(--primary);
+}
+
+.select option {
+  background-color: #1a1a2e;
+  color: var(--shape);
+}
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--shapeO20);
+  border-radius: 5px;
+  padding: 0.4rem;
+  background-color: var(--primaryO20);
+}
+
+.productList.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.placeholder {
+  color: var(--textMuted);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.productItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  font-size: 0.82rem;
+}
+
+.productItem:hover {
+  background-color: var(--primaryO50);
+}
+
+.productSelected {
+  background-color: var(--primaryO50);
+}
+
+.checkbox {
+  accent-color: var(--primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.productName {
+  color: var(--shape);
+  flex: 1;
+}
+
+.productPrice {
+  color: var(--textMuted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.valorHint {
+  color: var(--primary);
+  font-size: 0.75rem;
+  margin-top: -4px;
+}
+
+.paymentUrlBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primaryO20);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 8px var(--spaceMD);
+  font-size: 0.82rem;
+  color: var(--textMuted);
+  gap: 8px;
+}
+
+.paymentLink {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.submitButton {
+  background-color: var(--primary);
+  height: 38px;
+  border-radius: 25px;
+  color: var(--shape);
+  cursor: pointer;
+  border: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s, opacity 0.2s;
+  margin-top: 4px;
+}
+
+.submitButton:hover {
+  transform: scale(1.03);
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.discordLoginButton {
+  background-color: #5865f2;
+  height: 38px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--spaceMD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.discordLoginButton:hover {
+  background-color: #4752c4;
+}
+
+.discordLoginButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: var(--error);
+  font-size: 0.82rem;
+}
+
+.checkingRole {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--textMuted);
+  font-size: 0.82rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 0.8s linear infinite;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .adminCard {
+    width: 100%;
+  }
+}
