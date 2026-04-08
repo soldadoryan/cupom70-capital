@@ -1,8 +1,9 @@
 .adminCard {
   border: 1px solid var(--primaryO50);
-  width: 350px;
-  padding: var(--spaceXS);
-  border-radius: 0.55rem;
+  width: 100%;
+  max-width: 520px;
+  padding: var(--spaceMD);
+  border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
   gap: var(--spaceMD);
@@ -17,7 +18,8 @@
 
 .adminHeader {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 0.4rem;
 }
 
@@ -32,6 +34,10 @@
   gap: 6px;
   font-size: 0.8rem;
   color: var(--textMuted);
+  background-color: var(--primaryO20);
+  border: 1px solid var(--primaryO50);
+  border-radius: 20px;
+  padding: 4px 10px;
 }
 
 .discordIcon {
@@ -42,51 +48,70 @@
 .form {
   display: flex;
   flex-direction: column;
+  gap: var(--spaceMD);
+}
+
+/* Two-column row */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spaceSM);
+}
+
+/* Wrapper for label + field */
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .fieldLabel {
   color: var(--textMuted);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .selectedCount {
   color: var(--primary);
   font-size: 0.75rem;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
-.radioGroup {
-  border: none;
-  padding: 0;
-  margin: 0;
+/* Pill toggle buttons */
+.pillGroup {
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  gap: 6px;
 }
 
-.radioGroup legend {
+.pill {
+  flex: 1;
+  height: 36px;
+  border-radius: 20px;
+  border: 1px solid var(--shapeO20);
+  background-color: var(--primaryO20);
   color: var(--textMuted);
-  font-size: 0.8rem;
-  margin-bottom: 0.4rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
 }
 
-.radioLabel {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--textMuted);
-  font-size: 0.85rem;
-  cursor: pointer;
+.pill:hover {
+  border-color: var(--primary);
+  color: var(--shape);
 }
 
-.radioLabel input[type="radio"] {
-  accent-color: var(--primary);
-  cursor: pointer;
+.pillActive {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--shape);
+  font-weight: 600;
 }
 
 .input {
   background-color: var(--primaryO20);
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid var(--shapeO20);
   width: 100%;
   height: 38px;
@@ -94,6 +119,7 @@
   color: var(--shape);
   outline: none;
   font-size: 0.85rem;
+  transition: border-color 0.15s;
 }
 
 .input:focus {
@@ -112,7 +138,7 @@
 
 .select {
   background-color: var(--primaryO20);
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid var(--shapeO20);
   width: 100%;
   height: 38px;
@@ -121,6 +147,7 @@
   outline: none;
   font-size: 0.85rem;
   cursor: pointer;
+  transition: border-color 0.15s;
 }
 
 .select:focus {
@@ -135,13 +162,24 @@
 .productList {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  max-height: 220px;
+  gap: 0.25rem;
+  max-height: 200px;
   overflow-y: auto;
   border: 1px solid var(--shapeO20);
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 0.4rem;
   background-color: var(--primaryO20);
+}
+
+.productList::-webkit-scrollbar {
+  width: 4px;
+}
+.productList::-webkit-scrollbar-track {
+  background: transparent;
+}
+.productList::-webkit-scrollbar-thumb {
+  background-color: var(--primaryO50);
+  border-radius: 2px;
 }
 
 .productList.disabled {
@@ -160,8 +198,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 6px;
-  border-radius: 4px;
+  padding: 6px 8px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.15s;
   font-size: 0.82rem;
@@ -195,7 +233,6 @@
 .valorHint {
   color: var(--primary);
   font-size: 0.75rem;
-  margin-top: -4px;
 }
 
 .paymentUrlBox {
@@ -204,8 +241,8 @@
   justify-content: space-between;
   background-color: var(--primaryO20);
   border: 1px solid var(--primary);
-  border-radius: 5px;
-  padding: 8px var(--spaceMD);
+  border-radius: 6px;
+  padding: 10px var(--spaceMD);
   font-size: 0.82rem;
   color: var(--textMuted);
   gap: 8px;
@@ -220,7 +257,7 @@
 
 .submitButton {
   background-color: var(--primary);
-  height: 38px;
+  height: 40px;
   border-radius: 25px;
   color: var(--shape);
   cursor: pointer;
@@ -231,11 +268,10 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.2s, opacity 0.2s;
-  margin-top: 4px;
 }
 
 .submitButton:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .submitButton:disabled {
@@ -246,8 +282,8 @@
 
 .discordLoginButton {
   background-color: #5865f2;
-  height: 38px;
-  border-radius: 5px;
+  height: 40px;
+  border-radius: 6px;
   color: #fff;
   cursor: pointer;
   border: 0;
@@ -293,8 +329,12 @@
   font-size: 1.1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .adminCard {
-    width: 100%;
+    max-width: 100%;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
   }
 }

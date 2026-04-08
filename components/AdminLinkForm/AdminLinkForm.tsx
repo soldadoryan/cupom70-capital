@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { FaDiscord } from "react-icons/fa";
 import { AiOutlineLoading } from "react-icons/ai";
+import { toast } from "react-toastify";
 import useRequest from "@/hooks/useRequest";
 import capitalProducts from "@/app/capital-city/products.json";
 import moradaProducts from "@/app/morada-valley/products.json";
@@ -133,12 +134,12 @@ export function AdminLinkForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!userId.trim()) { alert("Informe o ID."); return; }
-    if (!city) { alert("Selecione uma cidade."); return; }
-    if (selectedProducts.length === 0) { alert("Selecione pelo menos um produto."); return; }
+    if (!userId.trim()) { toast.warning("Informe o ID."); return; }
+    if (!city) { toast.warning("Selecione uma cidade."); return; }
+    if (selectedProducts.length === 0) { toast.warning("Selecione pelo menos um produto."); return; }
 
     const valor = roundToMultipleOf250(parseInt(valorDoLink, 10) || 0);
-    if (valor <= 0) { alert("Informe um valor válido para o link (múltiplo de 250, máx 10.000)."); return; }
+    if (valor <= 0) { toast.warning("Informe um valor válido para o link (múltiplo de 250, máx 10.000)."); return; }
 
     setLoading(true);
     setPaymentUrl("");
@@ -162,7 +163,7 @@ export function AdminLinkForm() {
         window.open(response.payment_url, "_blank");
       }
     } catch {
-      alert("Erro ao gerar link de pagamento. Tente novamente.");
+      toast.error("Erro ao gerar link de pagamento. Tente novamente.");
     } finally {
       setLoading(false);
     }
@@ -223,101 +224,107 @@ export function AdminLinkForm() {
       </div>
 
       <form onSubmit={handleSubmit} className={s.form}>
-        <fieldset className={s.radioGroup}>
-          <legend className={s.fieldLabel}>Tipo de ID</legend>
-          <label className={s.radioLabel}>
-            <input
-              type="radio"
-              name="idType"
-              value="user"
-              checked={idType === "user"}
-              onChange={() => setIdType("user")}
-            />
-            ID Usuário
-          </label>
-          <label className={s.radioLabel}>
-            <input
-              type="radio"
-              name="idType"
-              value="wl"
-              checked={idType === "wl"}
-              onChange={() => setIdType("wl")}
-            />
-            ID WL
-          </label>
-        </fieldset>
-
-        <label className={s.fieldLabel}>{idType === "wl" ? "ID WL" : "ID Usuário"}</label>
-        <input
-          type="text"
-          className={s.input}
-          value={userId}
-          onChange={(e) => setUserId(e.target.value)}
-          placeholder={idType === "wl" ? "Digite o ID WL" : "Digite o ID do usuário"}
-          autoComplete="off"
-        />
-
-        <label className={s.fieldLabel}>Cidade</label>
-        <select
-          className={s.select}
-          value={city}
-          onChange={(e) => handleCityChange(e.target.value)}
-        >
-          <option value="">Selecione uma cidade</option>
-          {CITY_OPTIONS.map((opt) => (
-            <option key={opt.value} value={opt.value}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-
-        <label className={s.fieldLabel}>
-          Produtos
-          {selectedProducts.length > 0 && (
-            <span className={s.selectedCount}> ({selectedProducts.length} selecionado{selectedProducts.length > 1 ? "s" : ""})</span>
-          )}
-        </label>
-        <div className={`${s.productList} ${!city ? s.disabled : ""}`}>
-          {!city && <span className={s.placeholder}>Selecione uma cidade primeiro</span>}
-          {availableProducts.map((product) => {
-            const isSelected = selectedProducts.some((p) => p.id === product.id);
-            return (
-              <label
-                key={product.id}
-                className={`${s.productItem} ${isSelected ? s.productSelected : ""}`}
+        <div className={s.row}>
+          <div className={s.fieldGroup}>
+            <span className={s.fieldLabel}>Tipo de ID</span>
+            <div className={s.pillGroup}>
+              <button
+                type="button"
+                className={`${s.pill} ${idType === "user" ? s.pillActive : ""}`}
+                onClick={() => setIdType("user")}
               >
-                <input
-                  type="checkbox"
-                  checked={isSelected}
-                  onChange={() => toggleProduct(product.id, product.name)}
-                  disabled={!city}
-                  className={s.checkbox}
-                />
-                <span className={s.productName}>{product.name}</span>
-                <span className={s.productPrice}>R$ {product.price.toFixed(2)}</span>
-              </label>
-            );
-          })}
+                ID Usuário
+              </button>
+              <button
+                type="button"
+                className={`${s.pill} ${idType === "wl" ? s.pillActive : ""}`}
+                onClick={() => setIdType("wl")}
+              >
+                ID WL
+              </button>
+            </div>
+          </div>
+
+          <div className={s.fieldGroup}>
+            <label className={s.fieldLabel}>Cidade</label>
+            <select
+              className={s.select}
+              value={city}
+              onChange={(e) => handleCityChange(e.target.value)}
+            >
+              <option value="">Selecione uma cidade</option>
+              {CITY_OPTIONS.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
 
-        <label className={s.fieldLabel}>Valor do Link</label>
-        <input
-          type="number"
-          className={s.input}
-          value={valorDoLink}
-          onChange={handleValorChange}
-          onBlur={handleValorBlur}
-          placeholder="Múltiplo de 250, máx. R$ 10.000"
-          min={0}
-          max={10000}
-          step={250}
-          autoComplete="off"
-        />
-        {valorAjustado !== null && valorAjustado !== valorNum && (
-          <small className={s.valorHint}>
-            Será ajustado para: R$ {valorAjustado.toFixed(2)}
-          </small>
-        )}
+        <div className={s.fieldGroup}>
+          <label className={s.fieldLabel}>{idType === "wl" ? "ID WL" : "ID Usuário"}</label>
+          <input
+            type="text"
+            className={s.input}
+            value={userId}
+            onChange={(e) => setUserId(e.target.value)}
+            placeholder={idType === "wl" ? "Digite o ID WL" : "Digite o ID do usuário"}
+            autoComplete="off"
+          />
+        </div>
+
+        <div className={s.fieldGroup}>
+          <label className={s.fieldLabel}>
+            Produtos
+            {selectedProducts.length > 0 && (
+              <span className={s.selectedCount}> ({selectedProducts.length} selecionado{selectedProducts.length > 1 ? "s" : ""})</span>
+            )}
+          </label>
+          <div className={`${s.productList} ${!city ? s.disabled : ""}`}>
+            {!city && <span className={s.placeholder}>Selecione uma cidade primeiro</span>}
+            {availableProducts.map((product) => {
+              const isSelected = selectedProducts.some((p) => p.id === product.id);
+              return (
+                <label
+                  key={product.id}
+                  className={`${s.productItem} ${isSelected ? s.productSelected : ""}`}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isSelected}
+                    onChange={() => toggleProduct(product.id, product.name)}
+                    disabled={!city}
+                    className={s.checkbox}
+                  />
+                  <span className={s.productName}>{product.name}</span>
+                  <span className={s.productPrice}>R$ {product.price.toFixed(2)}</span>
+                </label>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className={s.fieldGroup}>
+          <label className={s.fieldLabel}>Valor do Link</label>
+          <input
+            type="number"
+            className={s.input}
+            value={valorDoLink}
+            onChange={handleValorChange}
+            onBlur={handleValorBlur}
+            placeholder="Múltiplo de 250, máx. R$ 10.000"
+            min={0}
+            max={10000}
+            step={250}
+            autoComplete="off"
+          />
+          {valorAjustado !== null && valorAjustado !== valorNum && (
+            <small className={s.valorHint}>
+              Será ajustado para: R$ {valorAjustado.toFixed(2)}
+            </small>
+          )}
+        </div>
 
         {paymentUrl && (
           <div className={s.paymentUrlBox}>
