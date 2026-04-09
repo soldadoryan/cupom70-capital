@@ -1,5 +1,61 @@
 [
   {
+    "id": "capitalexercito",
+    "name": "Assumir Exército",
+    "price": 5000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
+    "id": "capitalchoque",
+    "name": "Assumir CHOQUE",
+    "price": 3000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
+    "id": "capitaldenarc",
+    "name": "Assumir DENARC",
+    "price": 3000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
+    "id": "capitalromu",
+    "name": "Assumir ROMU",
+    "price": 3000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
+    "id": "capitaltor",
+    "name": "Assumir TOR",
+    "price": 3000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
+    "id": "capitalgate",
+    "name": "Assumir GATE",
+    "price": 3000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
+    "id": "capitalcoe",
+    "name": "Assumir COE",
+    "price": 4000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "imgUrl": "/guarnicao.png"
+  },
+  {
     "id": "capitalamarracao",
     "name": "Retirada Amarração",
     "price": 250,
@@ -20,7 +76,7 @@
     "name": "Fac (G3/SUB/PT)",
     "price": 7000,
     "city": "capitalcity",
-    "description": "/termo-faccao",
+    "description": "/termo-org",
     "imgUrl": "/org.webp"
   },
   {
@@ -28,7 +84,7 @@
     "name": "Fac Munição",
     "price": 6000,
     "city": "capitalcity",
-    "description": "/termo-faccao",
+    "description": "/termo-org",
     "imgUrl": "/org.webp"
   },
   {
@@ -36,7 +92,7 @@
     "name": "Fac (Desmanche/Colete)",
     "price": 5000,
     "city": "capitalcity",
-    "description": "/termo-faccao",
+    "description": "/termo-org",
     "imgUrl": "/org.webp"
   },
   {
@@ -44,7 +100,7 @@
     "name": "Fac (C4/Algema)",
     "price": 4800,
     "city": "capitalcity",
-    "description": "/termo-faccao",
+    "description": "/termo-org",
     "imgUrl": "/org.webp"
   },
   {
@@ -52,7 +108,7 @@
     "name": "Fac Produto Custom",
     "price": 4500,
     "city": "capitalcity",
-    "description": "/termo-faccao",
+    "description": "/termo-org",
     "imgUrl": "/org.webp"
   },
   {
