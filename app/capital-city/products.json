@@ -1,5 +1,19 @@
 [
   {
+    "id": "capitalg6316T",
+    "name": "G63 Blindagem Full 16T",
+    "price": 990,
+    "city": "capitalcity",
+    "imgUrl": "/g63.png"
+  },
+  {
+    "id": "capitalg6348T",
+    "name": "G63 Blindagem Full 48T",
+    "price": 1200,
+    "city": "capitalcity",
+    "imgUrl": "/g63.png"
+  },
+  {
     "id": "capitalexercito",
     "name": "Assumir Exército",
     "price": 5000,
