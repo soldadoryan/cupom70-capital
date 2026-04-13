@@ -1,19 +1,5 @@
 [
   {
-    "id": "moradag6316T",
-    "name": "G63 Blindagem Full 16T",
-    "price": 990,
-    "city": "moradadovalley",
-    "imgUrl": "/g63.png"
-  },
-  {
-    "id": "moradag6348T",
-    "name": "G63 Blindagem Full 48T",
-    "price": 1200,
-    "city": "moradadovalley",
-    "imgUrl": "/g63.png"
-  },
-  {
     "id": "nortefacmorada",
     "name": "Fac (Migração Valley Norte)",
     "price": 630,
