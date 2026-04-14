@@ -21,22 +21,6 @@
     "description": "/termo-org",
     "imgUrl": "/guarnicao.png"
   },
-  // {
-  //   "id": "capitalchoque",
-  //   "name": "Assumir CHOQUE",
-  //   "price": 3000,
-  //   "city": "capitalcity",
-  //   "description": "/termo-org",
-  //   "imgUrl": "/guarnicao.png"
-  // },
-  // {
-  //   "id": "capitaldenarc",
-  //   "name": "Assumir DENARC",
-  //   "price": 3000,
-  //   "city": "capitalcity",
-  //   "description": "/termo-org",
-  //   "imgUrl": "/guarnicao.png"
-  // },
   {
     "id": "capitalromu",
     "name": "Assumir ROMU",
@@ -61,14 +45,6 @@
     "description": "/termo-org",
     "imgUrl": "/guarnicao.png"
   },
-  // {
-  //   "id": "capitalcoe",
-  //   "name": "Assumir COE",
-  //   "price": 4000,
-  //   "city": "capitalcity",
-  //   "description": "/termo-org",
-  //   "imgUrl": "/guarnicao.png"
-  // },
   {
     "id": "capitalamarracao",
     "name": "Retirada Amarração",
