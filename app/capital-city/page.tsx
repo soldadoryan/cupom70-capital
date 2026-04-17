@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Metadata } from "next";
 import { PageStructure } from "@/components/PageStructure";
 import { Container } from "@/components/Container";
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
 export default function CapitalCity() {
   return (
     <PageStructure>
-      <Container customClass={s.customContainer}>
-        <main className={s.main}>
-          <h2 className={s.title}>Capital City</h2>
-          <Products products={productsList} />
-        </main>
-        <Sidebar />
-      </Container>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Container customClass={s.customContainer}>
+          <main className={s.main}>
+            <h2 className={s.title}>Capital City</h2>
+            <Products products={productsList} />
+          </main>
+          <Sidebar />
+        </Container>
+      </Suspense>
     </PageStructure>
   );
 }
