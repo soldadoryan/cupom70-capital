@@ -4,6 +4,7 @@ export type ProductPropType = ProductType & {
   stock?: number;
   imgUrl?: string;
   description?: string;
+  details?: string;
 };
 
 export type ProductCardPropsType = {

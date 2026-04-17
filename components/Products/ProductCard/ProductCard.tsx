@@ -26,7 +26,7 @@ export function ProductCard({ product }: ProductCardPropsType) {
         return prevProducts.map((prod) =>
           prod.id === product.id
             ? { ...prod, quantity: (prod.quantity || 0) + 1 }
-            : prod
+            : prod,
         );
       }
 
@@ -43,22 +43,20 @@ export function ProductCard({ product }: ProductCardPropsType) {
 
   const handleAddProduct = useCallback(() => {
     const differentCityExists = products.some(
-      (prod) => prod.city !== product.city
+      (prod) => prod.city !== product.city,
     );
     if (differentCityExists) {
       toast.error("Adicione produtos de uma mesma cidade no carrinho!");
       return;
     }
 
-    // Bloqueia adicionar outros produtos se AL Automática está no carrinho
     if (hasAlAutomatica && product.id !== AL_AUTOMATICA_ID) {
       toast.error(
-        "Remova a AL Automática do carrinho para adicionar outros produtos!"
+        "Remova a AL Automática do carrinho para adicionar outros produtos!",
       );
       return;
     }
 
-    // Se está adicionando AL Automática e já tem itens no carrinho
     if (product.id === AL_AUTOMATICA_ID && products.length > 0) {
       setShowModal(true);
       return;
@@ -80,6 +78,12 @@ export function ProductCard({ product }: ProductCardPropsType) {
         />
         <h4 className={s.title}>{product.name}</h4>
         <h5 className={s.price}>{formatToBRL(product.price)}</h5>
+        {product.details && (
+          <p
+            className={s.details}
+            dangerouslySetInnerHTML={{ __html: product.details }}
+          />
+        )}
         <div className={s.wrapButtons}>
           <button
             disabled={product.stock === 0}

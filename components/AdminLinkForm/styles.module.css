@@ -1,7 +1,7 @@
 .adminCard {
   border: 1px solid var(--primaryO50);
   width: 100%;
-  max-width: 520px;
+  max-width: 350px;
   padding: var(--spaceMD);
   border-radius: 0.75rem;
   display: flex;

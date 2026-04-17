@@ -4,6 +4,7 @@ export type ProductType = {
   price: number;
   city: string;
   stock?: number;
+  tab?: string;
 };
 
 export type ProductResponseType = {

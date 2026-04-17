@@ -15,7 +15,7 @@ export default function CapitalCity() {
     <PageStructure>
       <Container customClass={s.customContainer}>
         <main className={s.main}>
-          <h2 className={s.title}>Coins - Capital City</h2>
+          <h2 className={s.title}>Capital City</h2>
           <Products products={productsList} />
         </main>
         <Sidebar />

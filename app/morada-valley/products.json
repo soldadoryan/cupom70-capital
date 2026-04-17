@@ -1,117 +1,159 @@
 [
   {
-    "id": "moradatrd48t",
+    "id": "morada_trd_48t",
     "name": "TRD FULL BLINDAGEM 48T",
     "price": 499,
     "city": "moradadovalley",
-    "imgUrl": "/trd.png"
+    "tab": "Promoções",
+    "imgUrl": "/trd.png",
+    "details": "Blindagem FULL frente e costas e 48T nas laterais."
   },
   {
-    "id": "moradatrd16t",
+    "id": "morada_trd_16t",
     "name": "TRD FULL BLINDAGEM 16T",
     "price": 349,
     "city": "moradadovalley",
-    "imgUrl": "/trd.png"
+    "tab": "Promoções",
+    "imgUrl": "/trd.png",
+    "details": "Blindagem FULL frente e costas e 16T nas laterais."
   },
   {
-    "id": "nortefacmorada",
-    "name": "Fac (Migração Valley Norte)",
-    "price": 630,
-    "description": "/termo-faccao",
-    "imgUrl": "/org.webp",
-    "city": "moradadovalley"
-  },
-  {
-    "id": "nortefacmoradaarmas",
-    "name": "Fac Armas/Munição (Migração Valley Norte)",
-    "price": 1800,
+    "id": "fac_arma_morada",
+    "name": "Fac (G3/SUB/PT)",
+    "price": 4500,
     "city": "moradadovalley",
-    "description": "/termo-faccao",
-    "imgUrl": "/org.webp"
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_arma.png",
+    "details": "Facção responsável por produção de Armas."
   },
   {
-    "id": "moradaamarracao",
-    "name": "Retirada Amarração",
-    "price": 99,
+    "id": "fac_muni_morada",
+    "name": "Fac Munição",
+    "price": 4000,
     "city": "moradadovalley",
-    "description": "/amarracao",
-    "imgUrl": "/amarracao.png"
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_muni.png",
+    "details": "Facção responsável por produção de Munições."
   },
   {
-    "id": "moradaunbanauto",
-    "name": "Unban Automático",
-    "price": 150,
+    "id": "fac_desmanche_morada",
+    "name": "Fac (Desmanche/Colete)",
+    "price": 3500,
     "city": "moradadovalley",
-    "description": "/unban-auto",
-    "imgUrl": "/unbanauto.png"
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_desmanche_colete.png",
+    "details": "Facção responsável por produção de Desmanche e Colete."
   },
   {
-    "id": "moradaalterarnome",
-    "name": "Alterar Nome FAC",
-    "price": 400,
+    "id": "fac_c4_morada",
+    "name": "Fac (C4/Algema)",
+    "price": 3000,
     "city": "moradadovalley",
-    "imgUrl": "/alterarnome.png"
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_c4_algema.png",
+    "details": "Facção responsável por produção de C4 e Algemas."
   },
   {
-    "id": "moradasinuca",
-    "name": "Mesa de Sinuca",
-    "price": 350,
-    "city": "moradadovalley",
-    "description": "/sinuca",
-    "imgUrl": "/sinuca.png"
+    "id": "fac_droga_morada",
+    "name": "Fac Droga",
+    "price": 3000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_droga.png",
+    "details": "Facção responsável por produção de Droga (1 droga)."
   },
   {
-    "id": "primemorada",
+    "id": "prime_morada",
     "name": "Prime Fac (30 dias)",
     "price": 1750,
     "city": "moradadovalley",
     "description": "/fac-prime",
-    "imgUrl": "/fac-prime.webp"
+    "tab": "Facções",
+    "imgUrl": "/fac-prime.webp",
+    "details": "Receba benefícios especiais por 30 dias para sua facção."
   },
   {
-    "id": "moradacoins10",
+    "id": "morada_alterar_nome",
+    "name": "Alterar Nome FAC",
+    "price": 400,
+    "city": "moradadovalley",
+    "tab": "Facções",
+    "imgUrl": "/alterarnome.png",
+    "details": "Altere o nome da sua facção sob avaliação da Staff."
+  },
+  {
+    "id": "morada_amarracao",
+    "name": "Retirada Amarração",
+    "price": 99,
+    "city": "moradadovalley",
+    "description": "/amarracao",
+    "tab": "Serviços",
+    "imgUrl": "/amarracao.png",
+    "details": "Remova sua amarração instantâneamente."
+  },
+  {
+    "id": "morada_unban_auto",
+    "name": "Unban Automático",
+    "price": 150,
+    "city": "moradadovalley",
+    "description": "/unban-auto",
+    "tab": "Serviços",
+    "imgUrl": "/unbanauto.png",
+    "details": "Seja desbanido automaticamente sem precisar abrir ticket."
+  },
+  {
+    "id": "morada_sinuca",
+    "name": "Mesa de Sinuca",
+    "price": 350,
+    "city": "moradadovalley",
+    "description": "/sinuca",
+    "tab": "Serviços",
+    "imgUrl": "/sinuca.png",
+    "details": "Mesa de sinuca personalizada permanente."
+  },
+  {
+    "id": "morada_coins_10",
     "name": "10 Coins",
     "price": 3.6,
-    "city": "moradadovalley"
+    "city": "moradadovalley",
+    "tab": "Coins",
+    "imgUrl": "/coins.png"
   },
   {
-    "id": "moradacoins50",
+    "id": "morada_coins_50",
     "name": "50 Coins",
     "price": 18,
-    "city": "moradadovalley"
+    "city": "moradadovalley",
+    "tab": "Coins",
+    "imgUrl": "/coins.png"
   },
   {
-    "id": "moradacoins300",
+    "id": "morada_coins_300",
     "name": "300 Coins",
     "price": 108,
-    "city": "moradadovalley"
+    "city": "moradadovalley",
+    "tab": "Coins",
+    "imgUrl": "/coins.png"
   },
   {
-    "id": "moradacoins500",
+    "id": "morada_coins_500",
     "name": "500 Coins",
     "price": 180,
-    "city": "moradadovalley"
+    "city": "moradadovalley",
+    "tab": "Coins",
+    "imgUrl": "/coins.png"
   },
   {
-    "id": "moradacoins1000",
+    "id": "morada_coins_1000",
     "name": "1000 Coins",
     "price": 360,
-    "city": "moradadovalley"
-  },
-  {
-    "id": "moradafac",
-    "name": "Org/Fac",
-    "price": 700,
     "city": "moradadovalley",
-    "description": "/termo-faccao",
-    "imgUrl": "/org.webp"
-  },
-  {
-    "id": "moradafacgun",
-    "name": "Fac de armas",
-    "price": 2000,
-    "city": "moradadovalley",
-    "description": "/termo-faccao",
-    "imgUrl": "/org.webp"
+    "tab": "Coins",
+    "imgUrl": "/coins.png"
   }
 ]

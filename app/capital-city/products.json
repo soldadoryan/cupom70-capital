@@ -1,127 +1,111 @@
 [
   {
-    "id": "capitaltrd48t",
+    "id": "capital_trd_48t",
     "name": "TRD FULL BLINDAGEM 48T",
     "price": 499,
     "city": "capitalcity",
-    "imgUrl": "/trd.png"
+    "imgUrl": "/trd.png",
+    "tab": "Promoções",
+    "details": "Blindagem FULL frente e costas e 48T nas laterais."
   },
   {
-    "id": "capitaltrd16t",
+    "id": "capital_trd_16t",
     "name": "TRD FULL BLINDAGEM 16T",
     "price": 349,
     "city": "capitalcity",
-    "imgUrl": "/trd.png"
+    "tab": "Promoções",
+    "imgUrl": "/trd.png",
+    "details": "Blindagem FULL frente e costas e 16T nas laterais."
   },
   {
-    "id": "capitalexercito",
-    "name": "Assumir Exército",
-    "price": 5000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "imgUrl": "/guarnicao.png"
-  },
-  {
-    "id": "capitalromu",
+    "id": "capital_romu",
     "name": "Assumir ROMU",
     "price": 3000,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/guarnicao.png"
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
-    "id": "capitaltor",
+    "id": "capital_tor",
     "name": "Assumir TOR",
     "price": 3000,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/guarnicao.png"
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
-    "id": "capitalgate",
+    "id": "capital_gate",
     "name": "Assumir GATE",
     "price": 3000,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/guarnicao.png"
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
-    "id": "capitalamarracao",
-    "name": "Retirada Amarração",
-    "price": 250,
-    "city": "capitalcity",
-    "description": "/amarracao",
-    "imgUrl": "/amarracao.png"
-  },
-  {
-    "id": "al_automatica_capital",
-    "name": "AL Prime",
-    "price": 269,
-    "city": "capitalcity",
-    "description": "/al-prime",
-    "imgUrl": "/al_automatica.png"
-  },
-  {
-    "id": "facarmacapital7k",
+    "id": "fac_arma_capital",
     "name": "Fac (G3/SUB/PT)",
     "price": 7000,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/org.webp"
+    "tab": "Facções",
+    "imgUrl": "/fac_arma.png",
+    "details": "Facção responsável por produção de Armas."
   },
   {
-    "id": "facmunicapital6k",
+    "id": "fac_muni_capital",
     "name": "Fac Munição",
     "price": 6000,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/org.webp"
+    "tab": "Facções",
+    "imgUrl": "/fac_muni.png",
+    "details": "Facção responsável por produção de Munições."
   },
   {
-    "id": "facdesmanchecapital5k",
+    "id": "fac_desmanche_capital",
     "name": "Fac (Desmanche/Colete)",
     "price": 5000,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/org.webp"
+    "tab": "Facções",
+    "imgUrl": "/fac_desmanche_colete.png",
+    "details": "Facção responsável por produção de Desmanche e Colete."
   },
   {
-    "id": "facc4capital4k8",
+    "id": "fac_c4_capital",
     "name": "Fac (C4/Algema)",
     "price": 4800,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/org.webp"
+    "tab": "Facções",
+    "imgUrl": "/fac_c4_algema.png",
+    "details": "Facção responsável por produção de C4 e Algemas."
   },
   {
-    "id": "faclivrecapital4k5",
+    "id": "fac_livre_capital",
     "name": "Fac Produto Custom",
     "price": 4500,
     "city": "capitalcity",
     "description": "/termo-org",
-    "imgUrl": "/org.webp"
+    "tab": "Facções",
+    "imgUrl": "/org.webp",
+    "details": "Faça a sua proposta de novo produto e assuma uma facção."
   },
   {
-    "id": "capitalveiculoprime",
-    "name": "Veículo Prime (30 dias) (Abra Ticket)",
-    "price": 5000,
+    "id": "fac_droga_capital",
+    "name": "Fac Droga",
+    "price": 3000,
     "city": "capitalcity",
-    "imgUrl": "/veiculoprime.png"
-  },
-  {
-    "id": "capitalalterarnome",
-    "name": "Alterar Nome FAC",
-    "price": 400,
-    "city": "capitalcity",
-    "imgUrl": "/alterarnome.png"
-  },
-  {
-    "id": "capitalsinuca",
-    "name": "Mesa de Sinuca",
-    "price": 350,
-    "city": "capitalcity",
-    "description": "/sinuca",
-    "imgUrl": "/sinuca.png"
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_droga.png",
+    "details": "Facção responsável por produção de Droga (1 droga)."
   },
   {
     "id": "al_fac_capital",
@@ -129,7 +113,19 @@
     "price": 1500,
     "city": "capitalcity",
     "description": "/al-prioritaria-fac",
-    "imgUrl": "/al-fac.webp"
+    "tab": "Facções",
+    "imgUrl": "/al-fac.webp",
+    "details": "Traga 15 novos jogadores para a facção/organização."
+  },
+  {
+    "id": "prime_capital",
+    "name": "Fac Prime (30 dias)",
+    "price": 1750,
+    "city": "capitalcity",
+    "description": "/fac-prime",
+    "tab": "Facções",
+    "imgUrl": "/fac-prime.webp",
+    "details": "Receba benefícios especiais por 30 dias para sua facção."
   },
   {
     "id": "atualizacao_qg_capital",
@@ -137,44 +133,96 @@
     "price": 1500,
     "city": "capitalcity",
     "description": "/atualizacao-qg",
-    "imgUrl": "/atualizacao_qg.webp"
+    "tab": "Facções",
+    "imgUrl": "/atualizacao_qg.webp",
+    "details": "Solicite modificações para o seu QG sob avaliação da Staff."
   },
   {
-    "id": "primecapital",
-    "name": "Prime Fac (30 dias)",
-    "price": 1750,
+    "id": "capital_alterar_nome",
+    "name": "Alterar Nome FAC",
+    "price": 400,
     "city": "capitalcity",
-    "description": "/fac-prime",
-    "imgUrl": "/fac-prime.webp"
+    "tab": "Facções",
+    "imgUrl": "/alterarnome.png",
+    "details": "Altere o nome da sua facção sob avaliação da Staff."
   },
   {
-    "id": "capitalcoins10",
+    "id": "capital_amarracao",
+    "name": "Retirada Amarração",
+    "price": 250,
+    "city": "capitalcity",
+    "description": "/amarracao",
+    "tab": "Serviços",
+    "imgUrl": "/amarracao.png",
+    "details": "Remova sua amarração instantâneamente."
+  },
+  {
+    "id": "al_automatica_capital",
+    "name": "AL Prime",
+    "price": 269,
+    "city": "capitalcity",
+    "description": "/al-prime",
+    "tab": "Serviços",
+    "imgUrl": "/al_automatica.png",
+    "details": "Receba uma WL e um VIP Capital automaticamente."
+  },
+  {
+    "id": "capital_veiculo_prime",
+    "name": "Veículo Prime (30 dias)",
+    "price": 5000,
+    "city": "capitalcity",
+    "tab": "Serviços",
+    "imgUrl": "/veiculoprime.png",
+    "details": "Blindagem full frente e costa e 48T nas laterais da sua escolha."
+  },
+  {
+    "id": "capital_sinuca",
+    "name": "Mesa de Sinuca",
+    "price": 350,
+    "city": "capitalcity",
+    "description": "/sinuca",
+    "tab": "Serviços",
+    "imgUrl": "/sinuca.png",
+    "details": "Mesa de sinuca personalizada permanente."
+  },
+  {
+    "id": "capital_coins_10",
     "name": "10 Coins",
     "price": 3.6,
-    "city": "capitalcity"
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
   },
   {
-    "id": "capitalcoins50",
+    "id": "capital_coins_50",
     "name": "50 Coins",
     "price": 18,
-    "city": "capitalcity"
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
   },
   {
-    "id": "capitalcoins300",
+    "id": "capital_coins_300",
     "name": "300 Coins",
     "price": 108,
-    "city": "capitalcity"
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
   },
   {
-    "id": "capitalcoins500",
+    "id": "capital_coins_500",
     "name": "500 Coins",
     "price": 180,
-    "city": "capitalcity"
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
   },
   {
-    "id": "capitalcoins1000",
+    "id": "capital_coins_1000",
     "name": "1000 Coins",
     "price": 360,
-    "city": "capitalcity"
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
   }
 ]

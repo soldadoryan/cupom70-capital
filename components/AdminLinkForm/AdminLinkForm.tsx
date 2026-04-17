@@ -13,7 +13,10 @@ const CITY_OPTIONS = [
   { value: "moradadovalley", label: "Morada" },
 ];
 
-const CITY_PRODUCTS: Record<string, { id: string; name: string; price: number }[]> = {
+const CITY_PRODUCTS: Record<
+  string,
+  { id: string; name: string; price: number }[]
+> = {
   capitalcity: capitalProducts,
   moradadovalley: moradaProducts,
 };
@@ -41,7 +44,9 @@ export function AdminLinkForm() {
   const [idType, setIdType] = useState<"wl" | "user">("user");
   const [userId, setUserId] = useState("");
   const [city, setCity] = useState("");
-  const [selectedProducts, setSelectedProducts] = useState<SelectedProduct[]>([]);
+  const [selectedProducts, setSelectedProducts] = useState<SelectedProduct[]>(
+    [],
+  );
   const [valorDoLink, setValorDoLink] = useState("");
   const [descricao, setDescricao] = useState("");
   const [loading, setLoading] = useState(false);
@@ -74,7 +79,9 @@ export function AdminLinkForm() {
           if (hasRole) {
             setRoleVerified(true);
           } else {
-            setRoleError("Você não possui o cargo necessário para acessar este formulário.");
+            setRoleError(
+              "Você não possui o cargo necessário para acessar este formulário.",
+            );
           }
         }
       } catch {
@@ -83,7 +90,7 @@ export function AdminLinkForm() {
         setDiscordLoading(false);
       }
     },
-    [createRequest]
+    [createRequest],
   );
 
   useEffect(() => {
@@ -93,13 +100,19 @@ export function AdminLinkForm() {
 
   const handleDiscordLogin = () => {
     const clientId = process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID;
-    const redirectUri = encodeURIComponent(`${window.location.origin}/discord/callback`);
+    const redirectUri = encodeURIComponent(
+      `${window.location.origin}/discord/callback`,
+    );
     const url = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify`;
     const width = 500;
     const height = 700;
     const left = window.screenX + (window.outerWidth - width) / 2;
     const top = window.screenY + (window.outerHeight - height) / 2;
-    window.open(url, "discord-oauth", `width=${width},height=${height},left=${left},top=${top}`);
+    window.open(
+      url,
+      "discord-oauth",
+      `width=${width},height=${height},left=${left},top=${top}`,
+    );
   };
 
   const handleCityChange = (newCity: string) => {
@@ -117,7 +130,10 @@ export function AdminLinkForm() {
 
   const handleValorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value.replace(/\D/g, "");
-    if (!raw) { setValorDoLink(""); return; }
+    if (!raw) {
+      setValorDoLink("");
+      return;
+    }
     const num = Math.min(parseInt(raw, 10), 10000);
     setValorDoLink(String(num));
   };
@@ -125,12 +141,24 @@ export function AdminLinkForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!userId.trim()) { toast.warning("Informe o ID."); return; }
-    if (!city) { toast.warning("Selecione uma cidade."); return; }
-    if (selectedProducts.length === 0) { toast.warning("Selecione pelo menos um produto."); return; }
+    if (!userId.trim()) {
+      toast.warning("Informe o ID.");
+      return;
+    }
+    if (!city) {
+      toast.warning("Selecione uma cidade.");
+      return;
+    }
+    if (selectedProducts.length === 0) {
+      toast.warning("Selecione pelo menos um produto.");
+      return;
+    }
 
     const valor = parseInt(valorDoLink, 10) || 0;
-    if (valor <= 0) { toast.warning("Informe um valor válido para o link."); return; }
+    if (valor <= 0) {
+      toast.warning("Informe um valor válido para o link.");
+      return;
+    }
 
     setLoading(true);
     setPaymentUrl("");
@@ -144,7 +172,10 @@ export function AdminLinkForm() {
           idType,
           userId: userId.trim(),
           city,
-          products: selectedProducts.map((p) => ({ id: p.id, quantity: p.quantity })),
+          products: selectedProducts.map((p) => ({
+            id: p.id,
+            quantity: p.quantity,
+          })),
           valorDoLink: valor,
           descricao: descricao.trim() || undefined,
         },
@@ -166,8 +197,10 @@ export function AdminLinkForm() {
   if (!discordUser) {
     return (
       <div className={s.adminCard}>
-        <h3>Gerar Link de Pagamento</h3>
-        <p className={s.adminDesc}>Acesso restrito. Faça login com Discord para continuar.</p>
+        <h3>Acesso Restrito</h3>
+        <p className={s.adminDesc}>
+          Acesso restrito. Faça login com Discord para continuar.
+        </p>
         <button
           type="button"
           className={s.discordLoginButton}
@@ -190,7 +223,7 @@ export function AdminLinkForm() {
   if (!roleVerified) {
     return (
       <div className={s.adminCard}>
-        <h3>Gerar Link de Pagamento</h3>
+        <h3>Acesso Restrito</h3>
         {roleError ? (
           <p className={s.errorText}>{roleError}</p>
         ) : (
@@ -206,7 +239,7 @@ export function AdminLinkForm() {
   return (
     <div className={s.adminCard}>
       <div className={s.adminHeader}>
-        <h3>Gerar Link de Pagamento</h3>
+        <h3>Acesso Restrito</h3>
         <div className={s.loggedAs}>
           <FaDiscord className={s.discordIcon} />
           <span>{discordUser.global_name || discordUser.username}</span>
@@ -253,13 +286,17 @@ export function AdminLinkForm() {
         </div>
 
         <div className={s.fieldGroup}>
-          <label className={s.fieldLabel}>{idType === "wl" ? "ID WL" : "ID Usuário"}</label>
+          <label className={s.fieldLabel}>
+            {idType === "wl" ? "ID WL" : "ID Usuário"}
+          </label>
           <input
             type="text"
             className={s.input}
             value={userId}
             onChange={(e) => setUserId(e.target.value)}
-            placeholder={idType === "wl" ? "Digite o ID WL" : "Digite o ID do usuário"}
+            placeholder={
+              idType === "wl" ? "Digite o ID WL" : "Digite o ID do usuário"
+            }
             autoComplete="off"
           />
         </div>
@@ -268,13 +305,23 @@ export function AdminLinkForm() {
           <label className={s.fieldLabel}>
             Produtos
             {selectedProducts.length > 0 && (
-              <span className={s.selectedCount}> ({selectedProducts.length} selecionado{selectedProducts.length > 1 ? "s" : ""})</span>
+              <span className={s.selectedCount}>
+                {" "}
+                ({selectedProducts.length} selecionado
+                {selectedProducts.length > 1 ? "s" : ""})
+              </span>
             )}
           </label>
           <div className={`${s.productList} ${!city ? s.disabled : ""}`}>
-            {!city && <span className={s.placeholder}>Selecione uma cidade primeiro</span>}
+            {!city && (
+              <span className={s.placeholder}>
+                Selecione uma cidade primeiro
+              </span>
+            )}
             {availableProducts.map((product) => {
-              const isSelected = selectedProducts.some((p) => p.id === product.id);
+              const isSelected = selectedProducts.some(
+                (p) => p.id === product.id,
+              );
               return (
                 <label
                   key={product.id}
@@ -288,7 +335,9 @@ export function AdminLinkForm() {
                     className={s.checkbox}
                   />
                   <span className={s.productName}>{product.name}</span>
-                  <span className={s.productPrice}>R$ {product.price.toFixed(2)}</span>
+                  <span className={s.productPrice}>
+                    R$ {product.price.toFixed(2)}
+                  </span>
                 </label>
               );
             })}
@@ -325,7 +374,12 @@ export function AdminLinkForm() {
         {paymentUrl && (
           <div className={s.paymentUrlBox}>
             <span>Link gerado com sucesso!</span>
-            <a href={paymentUrl} target="_blank" rel="noreferrer" className={s.paymentLink}>
+            <a
+              href={paymentUrl}
+              target="_blank"
+              rel="noreferrer"
+              className={s.paymentLink}
+            >
               Abrir link
             </a>
           </div>
