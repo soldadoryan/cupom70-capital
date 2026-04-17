@@ -130,7 +130,7 @@
   {
     "id": "atualizacao_qg_capital",
     "name": "Atualização de QG",
-    "price": 1500,
+    "price": 2000,
     "city": "capitalcity",
     "description": "/atualizacao-qg",
     "tab": "Facções",
