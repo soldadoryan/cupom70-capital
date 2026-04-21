@@ -175,7 +175,7 @@ export function AdminLinkForm() {
     setPaymentUrl("");
     try {
       const response = await createRequest<{ payment_url: string }>({
-        url: "/admin/create-preference",
+        url: "/create-preference",
         method: "POST",
         body: {
           discordId: discordUser!.id,
@@ -211,9 +211,7 @@ export function AdminLinkForm() {
         <div className={s.authContainer}>
           <FaLock className={s.authLockIcon} />
           <h3>Acesso Restrito</h3>
-          <p className={s.adminDesc}>
-            Faça login com Discord para continuar.
-          </p>
+          <p className={s.adminDesc}>Faça login com Discord para continuar.</p>
           <button
             type="button"
             className={s.discordLoginButton}

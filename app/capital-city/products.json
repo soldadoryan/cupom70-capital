@@ -70,6 +70,16 @@
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
+    "id": "fac_lavagem_capital",
+    "name": "Fac Lavagem (3 no estoque)",
+    "price": 8000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_lavagem.png",
+    "details": "Facção responsável pela lavagem de dinheiro da cidade."
+  },
+  {
     "id": "fac_arma_capital",
     "name": "Fac (G3/SUB/PT)",
     "price": 7000,
@@ -136,7 +146,7 @@
     "city": "capitalcity",
     "imgUrl": "/vagas.png",
     "tab": "Facções",
-    "details": "Limite de 30 vagas por facção."
+    "details": "Limite de 30 vagas por facção (3 compras)."
   },
   {
     "id": "al_fac_capital",
@@ -149,14 +159,24 @@
     "details": "Traga 15 novos jogadores para a facção/organização."
   },
   {
+    "id": "vip_fac_capital",
+    "name": "VIP FAC (30 dias)",
+    "price": 980,
+    "city": "capitalcity",
+    "description": "/vip-fac",
+    "tab": "Facções",
+    "imgUrl": "/vip-fac.png",
+    "details": "Buff de farm + salário bônus + tampas."
+  },
+  {
     "id": "prime_capital",
-    "name": "Fac Prime (30 dias)",
-    "price": 1750,
+    "name": "FAC Prime (30 dias)",
+    "price": 2000,
     "city": "capitalcity",
     "description": "/fac-prime",
     "tab": "Facções",
-    "imgUrl": "/fac-prime.webp",
-    "details": "Receba benefícios especiais por 30 dias para sua facção."
+    "imgUrl": "/fac-prime.png",
+    "details": "Buff de farm + salário bônus + tampas + 2 veículos 48T."
   },
   {
     "id": "atualizacao_qg_capital",

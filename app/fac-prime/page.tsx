@@ -28,15 +28,9 @@ export default function FacPrime() {
               material.
               <br />
               <br />
-              <b>- Garagem Exclusiva no QG:</b> A facção poderá solicitar a
-              instalação de uma garagem em qualquer ponto dentro do seu QG, com
-              suporte total da administração e equipe de desenvolvimento;
-              <br />
-              <br />
-              <b>- Loja de Roupa Exclusiva no QG:</b> A facção poderá solicitar
-              a instalação de uma loja de roupa exclusiva em qualquer ponto
-              dentro do QG com suporte total da administração e equipe de
-              desenvolvimento;
+              <b>- 2 veículos (carros) 48T por 30 dias:</b> A facção poderá
+              solicitar 2 veículos 48T que serão adicionados na garagem de 2
+              membros apontados pelo solicitante.
               <br />
               <br />
               <h4>Regras:</h4>
@@ -50,8 +44,6 @@ export default function FacPrime() {
               - Válido por 30 dias corridos;
               <br />- Renovação manual a cada mês;
               <br />- Exclusivo para líderes de facção;
-              <br />- As localizações da garagem e loja de roupa estão sujeitas
-              à aprovação da staff;
               <br />
               <br />
             </p>
