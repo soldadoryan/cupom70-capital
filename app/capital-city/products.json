@@ -1,5 +1,45 @@
 [
   {
+    "id": "capital_coins_10",
+    "name": "10 Coins",
+    "price": 3.6,
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "capital_coins_50",
+    "name": "50 Coins",
+    "price": 18,
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "capital_coins_300",
+    "name": "300 Coins",
+    "price": 108,
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "capital_coins_500",
+    "name": "500 Coins",
+    "price": 180,
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "capital_coins_1000",
+    "name": "1000 Coins",
+    "price": 360,
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
     "id": "capital_romu",
     "name": "Assumir ROMU",
     "price": 3000,
@@ -175,45 +215,5 @@
     "tab": "Serviços",
     "imgUrl": "/sinuca.png",
     "details": "Mesa de sinuca personalizada permanente."
-  },
-  {
-    "id": "capital_coins_10",
-    "name": "10 Coins",
-    "price": 3.6,
-    "city": "capitalcity",
-    "imgUrl": "/coins.png",
-    "tab": "Coins"
-  },
-  {
-    "id": "capital_coins_50",
-    "name": "50 Coins",
-    "price": 18,
-    "city": "capitalcity",
-    "imgUrl": "/coins.png",
-    "tab": "Coins"
-  },
-  {
-    "id": "capital_coins_300",
-    "name": "300 Coins",
-    "price": 108,
-    "city": "capitalcity",
-    "imgUrl": "/coins.png",
-    "tab": "Coins"
-  },
-  {
-    "id": "capital_coins_500",
-    "name": "500 Coins",
-    "price": 180,
-    "city": "capitalcity",
-    "imgUrl": "/coins.png",
-    "tab": "Coins"
-  },
-  {
-    "id": "capital_coins_1000",
-    "name": "1000 Coins",
-    "price": 360,
-    "city": "capitalcity",
-    "imgUrl": "/coins.png",
-    "tab": "Coins"
   }
 ]
