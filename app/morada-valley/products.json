@@ -1,23 +1,5 @@
 [
   {
-    "id": "morada_trd_48t",
-    "name": "TRD FULL BLINDAGEM 48T",
-    "price": 499,
-    "city": "moradadovalley",
-    "tab": "Promoções",
-    "imgUrl": "/trd.png",
-    "details": "Blindagem FULL frente e costas e 48T nas laterais."
-  },
-  {
-    "id": "morada_trd_16t",
-    "name": "TRD FULL BLINDAGEM 16T",
-    "price": 349,
-    "city": "moradadovalley",
-    "tab": "Promoções",
-    "imgUrl": "/trd.png",
-    "details": "Blindagem FULL frente e costas e 16T nas laterais."
-  },
-  {
     "id": "fac_arma_morada",
     "name": "Fac (G3/SUB/PT)",
     "price": 4500,
