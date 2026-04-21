@@ -201,7 +201,7 @@ export function CartAndResume() {
   const handleDiscordLogin = () => {
     const clientId = process.env.NEXT_PUBLIC_DISCORD_CLIENT_ID;
     const redirectUri = encodeURIComponent(
-      `${window.location.origin}/discord/callback`
+      `${window.location.origin}/discord/callback`,
     );
     const scope = "identify";
     const url = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=${scope}`;
@@ -214,7 +214,7 @@ export function CartAndResume() {
     window.open(
       url,
       "discord-oauth",
-      `width=${width},height=${height},left=${left},top=${top}`
+      `width=${width},height=${height},left=${left},top=${top}`,
     );
   };
 
@@ -263,9 +263,7 @@ export function CartAndResume() {
         return;
       }
       if (alAutomatica && !discordUser) {
-        alert(
-          "É obrigatório logar com o Discord para comprar a AL Prime!",
-        );
+        alert("É obrigatório logar com o Discord para comprar a AL Prime!");
         return;
       }
       setLoading(true);
@@ -283,7 +281,7 @@ export function CartAndResume() {
       } = data;
       try {
         const response = await createRequest<CreatePreferenceType>({
-          url: "/create-preference",
+          url: "/admin/create-preference",
           method: "POST",
           body: {
             userId,

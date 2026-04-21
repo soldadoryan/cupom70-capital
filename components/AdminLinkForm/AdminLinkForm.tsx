@@ -10,7 +10,7 @@ import s from "./styles.module.css";
 
 const CITY_OPTIONS = [
   { value: "capitalcity", label: "Capital City" },
-  { value: "moradadovalley", label: "Morada" },
+  { value: "moradadovalley", label: "Morada do Valley" },
 ];
 
 const PACOTE_CUSTOM = { id: "pacote_custom", name: "Pacote Custom", price: 0 };
@@ -175,7 +175,7 @@ export function AdminLinkForm() {
     setPaymentUrl("");
     try {
       const response = await createRequest<{ payment_url: string }>({
-        url: "/create-preference",
+        url: "/admin/create-preference",
         method: "POST",
         body: {
           discordId: discordUser!.id,
