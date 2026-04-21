@@ -1,5 +1,14 @@
 [
   {
+    "id": "capital_vagas_painel",
+    "name": "+10 Vagas Painel",
+    "price": 500,
+    "city": "capitalcity",
+    "imgUrl": "/vagas.png",
+    "tab": "Facções",
+    "details": "Limite de 30 vagas por facção."
+  },
+  {
     "id": "capital_trd_48t",
     "name": "TRD FULL BLINDAGEM 48T",
     "price": 499,

@@ -1,5 +1,14 @@
 [
   {
+    "id": "morada_vagas_painel",
+    "name": "+10 Vagas Painel",
+    "price": 500,
+    "city": "moradadovalley",
+    "imgUrl": "/vagas.png",
+    "tab": "Facções",
+    "details": "Limite de 30 vagas por facção."
+  },
+  {
     "id": "morada_trd_48t",
     "name": "TRD FULL BLINDAGEM 48T",
     "price": 499,
