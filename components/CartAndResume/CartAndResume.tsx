@@ -281,7 +281,7 @@ export function CartAndResume() {
       } = data;
       try {
         const response = await createRequest<CreatePreferenceType>({
-          url: "/admin/create-preference",
+          url: "/create-preference",
           method: "POST",
           body: {
             userId,
