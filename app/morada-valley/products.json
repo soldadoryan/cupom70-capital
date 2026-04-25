@@ -150,7 +150,7 @@
   {
     "id": "morada_unban_auto",
     "name": "Unban Automático",
-    "price": 150,
+    "price": 99,
     "city": "moradadovalley",
     "description": "/unban-auto",
     "tab": "Serviços",

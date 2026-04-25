@@ -50,26 +50,6 @@
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
-    "id": "capital_tor",
-    "name": "Assumir TOR",
-    "price": 3000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
-    "id": "capital_gate",
-    "name": "Assumir GATE",
-    "price": 3000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
     "id": "fac_lavagem_capital",
     "name": "Fac Lavagem (3 no estoque)",
     "price": 8000,
