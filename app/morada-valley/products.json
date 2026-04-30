@@ -155,7 +155,7 @@
     "description": "/unban-auto",
     "tab": "Serviços",
     "imgUrl": "/unbanauto.png",
-    "details": "Seja desbanido automaticamente sem precisar abrir ticket."
+  "details": "Seja desbanido automaticamente sem precisar abrir ticket."
   },
   {
     "id": "morada_sinuca",

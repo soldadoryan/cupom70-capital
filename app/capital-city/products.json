@@ -42,6 +42,26 @@
   {
     "id": "capital_romu",
     "name": "Assumir ROMU",
+    "price": 2500,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "capital_gcc",
+    "name": "Assumir GCC",
+    "price": 2300,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "capital_pmc",
+    "name": "Assumir PMC",
     "price": 3000,
     "city": "capitalcity",
     "description": "/termo-org",
@@ -50,14 +70,44 @@
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
-    "id": "fac_lavagem_capital",
-    "name": "Fac Lavagem (3 no estoque)",
-    "price": 8000,
+    "id": "capital_ft",
+    "name": "Assumir Força Tática",
+    "price": 3500,
     "city": "capitalcity",
     "description": "/termo-org",
-    "tab": "Facções",
-    "imgUrl": "/fac_lavagem.png",
-    "details": "Facção responsável pela lavagem de dinheiro da cidade."
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "capital_pf",
+    "name": "Assumir Polícia Federal",
+    "price": 3500,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "capital_cot",
+    "name": "Assumir COT",
+    "price": 4000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "capital_coe",
+    "name": "Assumir COE",
+    "price": 4000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
     "id": "fac_arma_capital",
