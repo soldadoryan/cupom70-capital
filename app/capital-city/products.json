@@ -80,16 +80,6 @@
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
-    "id": "capital_pf",
-    "name": "Assumir Polícia Federal",
-    "price": 3500,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
     "id": "capital_cot",
     "name": "Assumir COT",
     "price": 4000,
