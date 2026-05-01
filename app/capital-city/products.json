@@ -1,5 +1,26 @@
 [
   {
+    "id": "morada_trd_48t",
+    "name": "TRD FULL BLINDAGEM 48T",
+    "price": 499,
+    "city": "moradadovalley",
+    "imgUrl": "/trd.png",
+    "tab": "Promoções",
+    "imgUrl": "/trd.png",
+    "details": "Blindagem FULL frente e costas e 48T nas laterais."
+  },
+  {
+    "id": "moradatrd16t",
+    "id": "morada_trd_16t",
+    "name": "TRD FULL BLINDAGEM 16T",
+    "price": 349,
+    "city": "moradadovalley",
+    "imgUrl": "/trd.png",
+    "tab": "Promoções",
+    "imgUrl": "/trd.png",
+    "details": "Blindagem FULL frente e costas e 16T nas laterais."
+  },
+  {
     "id": "capital_coins_10",
     "name": "10 Coins",
     "price": 3.6,
