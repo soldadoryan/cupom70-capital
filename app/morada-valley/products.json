@@ -50,6 +50,16 @@
     "details": "Facção responsável pela lavagem de dinheiro da cidade."
   },
   {
+    "id": "fac_ia2_morada",
+    "name": "Fac (IA2/SUB/PT)",
+    "price": 7000,
+    "city": "moradadovalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_arma.png",
+    "details": "Facção responsável por produção de Armas."
+  },
+  {
     "id": "fac_arma_morada",
     "name": "Fac (G3/SUB/PT)",
     "price": 4500,
@@ -155,7 +165,7 @@
     "description": "/unban-auto",
     "tab": "Serviços",
     "imgUrl": "/unbanauto.png",
-  "details": "Seja desbanido automaticamente sem precisar abrir ticket."
+    "details": "Seja desbanido automaticamente sem precisar abrir ticket."
   },
   {
     "id": "morada_sinuca",
