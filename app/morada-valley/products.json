@@ -1,5 +1,15 @@
 [
   {
+    "id": "fac_capofol_morada",
+    "name": "Fac Droga Capofol",
+    "price": 2999,
+    "city": "moradadovalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/fac_capofol.png",
+    "details": "Dobro de Rendimento."
+  },
+  {
     "id": "morada_coins_10",
     "name": "10 Coins",
     "price": 3.6,
@@ -38,16 +48,6 @@
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
-  },
-  {
-    "id": "fac_capofol_morada",
-    "name": "Fac Droga Capofol",
-    "price": 2999,
-    "city": "moradadovalley",
-    "description": "/termo-org",
-    "tab": "Facções",
-    "imgUrl": "/fac_capofol.png",
-    "details": "Dobro de Rendimento."
   },
   {
     "id": "fac_lavagem_morada",
