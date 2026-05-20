@@ -40,26 +40,6 @@
     "tab": "Coins"
   },
   {
-    "id": "capital_romu",
-    "name": "Assumir ROMU",
-    "price": 2500,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
-    "id": "capital_gcc",
-    "name": "Assumir GCC",
-    "price": 2300,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
     "id": "capital_ft",
     "name": "Assumir Força Tática",
     "price": 3500,
@@ -148,6 +128,16 @@
     "tab": "Facções",
     "imgUrl": "/fac_custom.png",
     "details": "Faça a sua proposta de novo produto e assuma uma facção."
+  },
+  {
+    "id": "fac_capofol_capital",
+    "name": "Fac Droga Capofol",
+    "price": 2999,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_capofol.png",
+    "details": "Dobro de Rendimento."
   },
   {
     "id": "fac_droga_capital",

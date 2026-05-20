@@ -40,9 +40,19 @@
     "imgUrl": "/coins.png"
   },
   {
+    "id": "fac_capofol_morada",
+    "name": "Fac Droga Capofol",
+    "price": 2999,
+    "city": "moradadovalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_capofol.png",
+    "details": "Dobro de Rendimento."
+  },
+  {
     "id": "fac_lavagem_morada",
     "name": "Fac Lavagem (3 no estoque)",
-    "price": 5000,
+    "price": 2900,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -52,7 +62,7 @@
   {
     "id": "fac_ia2_morada",
     "name": "Fac (IA2/SUB/PT)",
-    "price": 7000,
+    "price": 2500,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -62,7 +72,7 @@
   {
     "id": "fac_arma_morada",
     "name": "Fac (G3/SUB/PT)",
-    "price": 4500,
+    "price": 2000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -72,7 +82,7 @@
   {
     "id": "fac_muni_morada",
     "name": "Fac Munição",
-    "price": 4000,
+    "price": 2000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -92,7 +102,7 @@
   {
     "id": "fac_c4_morada",
     "name": "Fac (C4/Algema)",
-    "price": 3000,
+    "price": 1500,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -102,7 +112,7 @@
   {
     "id": "fac_droga_morada",
     "name": "Fac Droga",
-    "price": 3000,
+    "price": 1500,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
