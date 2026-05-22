@@ -68,6 +68,9 @@ export function ProductCard({ product }: ProductCardPropsType) {
   return (
     <>
       <div className={s.card}>
+        {product.stockLabel && (
+          <div className={s.stock}>{product.stockLabel}</div>
+        )}
         <Image
           width={260}
           height={260}
@@ -77,7 +80,12 @@ export function ProductCard({ product }: ProductCardPropsType) {
           className={s.productImage}
         />
         <h4 className={s.title}>{product.name}</h4>
-        <h5 className={s.price}>{formatToBRL(product.price)}</h5>
+        <div className={s.priceWrapper}>
+          {product.oldPrice && (
+            <span className={s.oldPrice}>{formatToBRL(product.oldPrice)}</span>
+          )}
+          <h5 className={s.price}>{formatToBRL(product.price)}</h5>
+        </div>
         {product.details && (
           <p
             className={s.details}

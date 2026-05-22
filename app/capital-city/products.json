@@ -10,6 +10,18 @@
     "details": "Dobro de Rendimento."
   },
   {
+    "id": "org_coop_capital",
+    "name": "Comando Ostensivo de Operações Policiais",
+    "price": 5000,
+    "oldPrice": 8000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/coop.png",
+    "details": "Foco em COD. 5 e combate direto ao crime organizado.",
+    "stockLabel": "3 em Estoque"
+  },
+  {
     "id": "capital_coins_10",
     "name": "10 Coins",
     "price": 3.6,

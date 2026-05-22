@@ -2,6 +2,7 @@ export type ProductType = {
   id: string;
   name: string;
   price: number;
+  oldPrice?: number;
   city: string;
   stock?: number;
   tab?: string;
