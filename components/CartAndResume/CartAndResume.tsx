@@ -68,7 +68,7 @@ const getSchema = (hasAlAutomatica: boolean) =>
         .string()
         .email("Digite um e-mail válido!")
         .required("O e-mail é obrigatório!"),
-      discordTag: yup.string().required("A tag do Discord é obrigatória!"),
+      discordTag: yup.string().required("Login com Discord é obrigatório!"),
       nomeCompleto: yup
         .string()
         .required("O nome completo é obrigatório!")
@@ -182,7 +182,7 @@ export function CartAndResume() {
 
         if (response.id) {
           setDiscordUser(response);
-          setValue("discordTag", response.global_name || response.username, {
+          setValue("discordTag", response.id, {
             shouldValidate: true,
           });
         }
@@ -262,8 +262,8 @@ export function CartAndResume() {
         alert("O ID de WL é obrigatório para o produto AL Automática!");
         return;
       }
-      if (alAutomatica && !discordUser) {
-        alert("É obrigatório logar com o Discord para comprar a AL Prime!");
+      if (!discordUser) {
+        alert("É obrigatório logar com o Discord para finalizar a compra!");
         return;
       }
       setLoading(true);
@@ -463,64 +463,46 @@ export function CartAndResume() {
             {errors.email && (
               <span className={s.errorSpan}>{errors.email?.message}</span>
             )}
-            <label className={s.labelResume}>Tag do Discord</label>
-            {hasAlAutomatica ? (
-              <>
-                {discordUser ? (
-                  <div className={s.discordLoggedIn}>
-                    <FaDiscord />
-                    <span>
-                      Logado como{" "}
-                      <strong>
-                        {discordUser.global_name || discordUser.username}
-                      </strong>
-                    </span>
-                    <button
-                      type="button"
-                      className={s.discordChangeButton}
-                      onClick={handleDiscordLogin}
-                    >
-                      Trocar
-                    </button>
-                  </div>
-                ) : (
-                  <button
-                    type="button"
-                    className={s.discordLoginButton}
-                    onClick={handleDiscordLogin}
-                    disabled={discordLoading}
-                  >
-                    {discordLoading ? (
-                      <AiOutlineLoading className={s.loading} />
-                    ) : (
-                      <>
-                        <FaDiscord />
-                        Logar com Discord
-                      </>
-                    )}
-                  </button>
-                )}
-                <input type="hidden" {...register("discordTag")} />
-                {!discordUser && (
-                  <span className={s.errorSpan}>
-                    Login com Discord obrigatorio para AL Prime
-                  </span>
-                )}
-              </>
+            <label className={s.labelResume}>Discord</label>
+            {discordUser ? (
+              <div className={s.discordLoggedIn}>
+                <FaDiscord />
+                <span>
+                  Logado como{" "}
+                  <strong>
+                    {discordUser.global_name || discordUser.username}
+                  </strong>
+                </span>
+                <button
+                  type="button"
+                  className={s.discordChangeButton}
+                  onClick={handleDiscordLogin}
+                >
+                  Trocar
+                </button>
+              </div>
             ) : (
-              <>
-                <input
-                  className={s.inputInfo}
-                  type="text"
-                  {...register("discordTag")}
-                  autoComplete="off"
-                />
-                {errors.discordTag && (
-                  <span className={s.errorSpan}>
-                    {errors.discordTag?.message}
-                  </span>
+              <button
+                type="button"
+                className={s.discordLoginButton}
+                onClick={handleDiscordLogin}
+                disabled={discordLoading}
+              >
+                {discordLoading ? (
+                  <AiOutlineLoading className={s.loading} />
+                ) : (
+                  <>
+                    <FaDiscord />
+                    Logar com Discord
+                  </>
                 )}
-              </>
+              </button>
+            )}
+            <input type="hidden" {...register("discordTag")} />
+            {!discordUser && (
+              <span className={s.errorSpan}>
+                Login com Discord obrigatório para finalizar a compra
+              </span>
             )}
 
             <label className={s.labelResume}>CEP</label>
