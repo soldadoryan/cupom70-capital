@@ -10,18 +10,6 @@
     "details": "Dobro de Rendimento."
   },
   {
-    "id": "org_coop_capital",
-    "name": "Comando Ostensivo de Operações Policiais",
-    "price": 5000,
-    "oldPrice": 8000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Oferta Limitada",
-    "imgUrl": "/coop.png",
-    "details": "Foco em COD. 5 e combate direto ao crime organizado.",
-    "stockLabel": "3 em Estoque"
-  },
-  {
     "id": "capital_coins_10",
     "name": "10 Coins",
     "price": 3.6,
@@ -62,16 +50,6 @@
     "tab": "Coins"
   },
   {
-    "id": "capital_ft",
-    "name": "Assumir Força Tática",
-    "price": 3500,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
     "id": "capital_cot",
     "name": "Assumir COT",
     "price": 4000,
@@ -80,26 +58,6 @@
     "tab": "Organizações",
     "imgUrl": "/guarnicao.png",
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
-    "id": "capital_coe",
-    "name": "Assumir COE",
-    "price": 4000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Organizações",
-    "imgUrl": "/guarnicao.png",
-    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
-    "id": "fac_ia2_capital",
-    "name": "Fac (IA2/SUB/PT)",
-    "price": 10000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Facções",
-    "imgUrl": "/fac_arma.png",
-    "details": "Facção responsável por produção de Armas."
   },
   {
     "id": "fac_arma_capital",
