@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { CartProvider } from "@/context/CartContext/CartContext";
-import { AdminLinkForm } from "@/components/AdminLinkForm/AdminLinkForm";
+import { HelpPopup } from "@/components/HelpPopup/HelpPopup";
 import { ToastContainer } from "react-toastify";
 import "./globals.css";
 
@@ -37,7 +37,7 @@ export default function RootLayout({
           theme="dark"
         />
         <CartProvider>{children}</CartProvider>
-        <AdminLinkForm />
+        <HelpPopup />
       </body>
     </html>
   );
