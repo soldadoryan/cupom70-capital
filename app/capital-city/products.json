@@ -1,13 +1,14 @@
 [
   {
-    "id": "fac_capofol_capital",
-    "name": "Fac Droga Capofol",
-    "price": 4000,
+    "id": "fac_ar15_capital",
+    "name": "Fac AR15/SUB/PT",
+    "oldPrice": 20000,
+    "price": 15000,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Oferta Limitada",
-    "imgUrl": "/fac_capofol.png",
-    "details": "Dobro de Rendimento."
+    "imgUrl": "/fac_ar15_capital.png",
+    "details": "Facção responsável por produção de Armas."
   },
   {
     "id": "capital_coins_10",
@@ -58,16 +59,6 @@
     "tab": "Organizações",
     "imgUrl": "/guarnicao.png",
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
-  },
-  {
-    "id": "fac_ar15_capital",
-    "name": "Fac AR15/SUB/PT",
-    "price": 15000,
-    "city": "capitalcity",
-    "description": "/termo-org",
-    "tab": "Facções",
-    "imgUrl": "/fac_ar15_capital.png",
-    "details": "Facção responsável por produção de Armas."
   },
   {
     "id": "fac_arma_capital",

@@ -1,13 +1,14 @@
 [
   {
-    "id": "fac_capofol_morada",
-    "name": "Fac Droga Capofol",
-    "price": 2999,
+    "id": "fac_ar15_morada",
+    "name": "Fac AR15/SUB/PT",
+    "oldPrice": 5000,
+    "price": 4000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Oferta Limitada",
-    "imgUrl": "/fac_capofol.png",
-    "details": "Dobro de Rendimento."
+    "imgUrl": "/fac_ar15_capital.png",
+    "details": "Facção responsável por produção de Armas."
   },
   {
     "id": "org_coop_morada",
