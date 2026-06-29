@@ -60,6 +60,16 @@
     "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
   },
   {
+    "id": "fac_ar15_capital",
+    "name": "Fac AR15/SUB/PT",
+    "price": 15000,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_ar15_capital.png",
+    "details": "Facção responsável por produção de Armas."
+  },
+  {
     "id": "fac_arma_capital",
     "name": "Fac (G3/SUB/PT)",
     "price": 7000,
