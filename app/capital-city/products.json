@@ -13,7 +13,8 @@
   {
     "id": "capital_coins_10",
     "name": "10 Coins",
-    "price": 3.6,
+    "oldPrice": 3.6,
+    "price": 3.24,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -21,7 +22,8 @@
   {
     "id": "capital_coins_50",
     "name": "50 Coins",
-    "price": 18,
+    "oldPrice": 18,
+    "price": 16.2,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -29,7 +31,8 @@
   {
     "id": "capital_coins_300",
     "name": "300 Coins",
-    "price": 108,
+    "oldPrice": 108,
+    "price": 97.2,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -37,7 +40,8 @@
   {
     "id": "capital_coins_500",
     "name": "500 Coins",
-    "price": 180,
+    "oldPrice": 180,
+    "price": 162,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -45,7 +49,8 @@
   {
     "id": "capital_coins_1000",
     "name": "1000 Coins",
-    "price": 360,
+    "oldPrice": 360,
+    "price": 324,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -53,7 +58,8 @@
   {
     "id": "capital_cot",
     "name": "Assumir COT",
-    "price": 4000,
+    "oldPrice": 4000,
+    "price": 3600,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Organizações",
@@ -63,7 +69,8 @@
   {
     "id": "fac_arma_capital",
     "name": "Fac (G3/SUB/PT)",
-    "price": 7000,
+    "oldPrice": 7000,
+    "price": 6300,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -73,7 +80,8 @@
   {
     "id": "fac_muni_capital",
     "name": "Fac Munição",
-    "price": 6000,
+    "oldPrice": 6000,
+    "price": 5400,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -83,7 +91,8 @@
   {
     "id": "fac_desmanche_capital",
     "name": "Fac (Desmanche/Colete)",
-    "price": 5000,
+    "oldPrice": 5000,
+    "price": 4500,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -93,7 +102,8 @@
   {
     "id": "fac_c4_capital",
     "name": "Fac (C4/Algema)",
-    "price": 4800,
+    "oldPrice": 4800,
+    "price": 4320,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -103,7 +113,8 @@
   {
     "id": "fac_livre_capital",
     "name": "Fac Produto Custom",
-    "price": 4500,
+    "oldPrice": 4500,
+    "price": 4050,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -113,7 +124,8 @@
   {
     "id": "fac_droga_capital",
     "name": "Fac Droga",
-    "price": 3000,
+    "oldPrice": 3000,
+    "price": 2700,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -123,7 +135,8 @@
   {
     "id": "capital_vagas_painel",
     "name": "+10 Vagas Painel",
-    "price": 500,
+    "oldPrice": 500,
+    "price": 450,
     "city": "capitalcity",
     "imgUrl": "/vagas.png",
     "tab": "Facções",
@@ -132,7 +145,8 @@
   {
     "id": "al_fac_capital",
     "name": "AL Fac (Fac/Org)",
-    "price": 1500,
+    "oldPrice": 1500,
+    "price": 1350,
     "city": "capitalcity",
     "description": "/al-prioritaria-fac",
     "tab": "Facções",
@@ -142,7 +156,8 @@
   {
     "id": "vip_fac_capital",
     "name": "VIP FAC (30 dias)",
-    "price": 980,
+    "oldPrice": 980,
+    "price": 882,
     "city": "capitalcity",
     "description": "/vip-fac",
     "tab": "Facções",
@@ -152,7 +167,8 @@
   {
     "id": "prime_capital",
     "name": "FAC Prime (30 dias)",
-    "price": 2000,
+    "oldPrice": 2000,
+    "price": 1800,
     "city": "capitalcity",
     "description": "/fac-prime",
     "tab": "Facções",
@@ -162,7 +178,8 @@
   {
     "id": "atualizacao_qg_capital",
     "name": "Atualização de QG",
-    "price": 2000,
+    "oldPrice": 2000,
+    "price": 1800,
     "city": "capitalcity",
     "description": "/atualizacao-qg",
     "tab": "Facções",
@@ -172,7 +189,8 @@
   {
     "id": "capital_alterar_nome",
     "name": "Alterar Nome FAC",
-    "price": 400,
+    "oldPrice": 400,
+    "price": 360,
     "city": "capitalcity",
     "tab": "Facções",
     "imgUrl": "/alterarnome.png",
@@ -181,7 +199,8 @@
   {
     "id": "capital_amarracao",
     "name": "Retirada Amarração",
-    "price": 250,
+    "oldPrice": 250,
+    "price": 225,
     "city": "capitalcity",
     "description": "/amarracao",
     "tab": "Serviços",
@@ -191,7 +210,8 @@
   {
     "id": "al_automatica_capital",
     "name": "AL Prime",
-    "price": 269,
+    "oldPrice": 269,
+    "price": 242.1,
     "city": "capitalcity",
     "description": "/al-prime",
     "tab": "Serviços",
@@ -201,7 +221,8 @@
   {
     "id": "capital_veiculo_prime",
     "name": "Veículo Prime (30 dias)",
-    "price": 5000,
+    "oldPrice": 5000,
+    "price": 4500,
     "city": "capitalcity",
     "tab": "Serviços",
     "imgUrl": "/veiculoprime.png",
@@ -210,7 +231,8 @@
   {
     "id": "capital_sinuca",
     "name": "Mesa de Sinuca",
-    "price": 350,
+    "oldPrice": 350,
+    "price": 315,
     "city": "capitalcity",
     "description": "/sinuca",
     "tab": "Serviços",
