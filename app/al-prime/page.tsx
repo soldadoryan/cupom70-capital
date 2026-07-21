@@ -51,6 +51,13 @@ export default function AlPrime() {
               possuem whitelist aprovada. Compras realizadas por jogadores
               nessas condições não serão reembolsadas.
             </div>
+            <div className={s.warningYellow}>
+              AVISO: Este procedimento também será válido em casos excepcionais,
+              quando a perda da Whitelist (WL) ocorrer em razão da saída
+              voluntária do usuário do servidor do Discord, desde que seja
+              aberto um ticket junto ao suporte e o retorno seja previamente
+              autorizado por um membro da staff.
+            </div>
             <div className={s.warning}>
               ATENÇÃO: Este produto é apenas para jogadores maiores de de 18
               anos.
