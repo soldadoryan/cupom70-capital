@@ -25,7 +25,8 @@
   {
     "id": "morada_coins_10",
     "name": "10 Coins",
-    "price": 3.6,
+    "oldPrice": 3.6,
+    "price": 2.88,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -33,7 +34,8 @@
   {
     "id": "morada_coins_50",
     "name": "50 Coins",
-    "price": 18,
+    "oldPrice": 18,
+    "price": 14.4,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -41,7 +43,8 @@
   {
     "id": "morada_coins_300",
     "name": "300 Coins",
-    "price": 108,
+    "oldPrice": 108,
+    "price": 86.4,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -49,7 +52,8 @@
   {
     "id": "morada_coins_500",
     "name": "500 Coins",
-    "price": 180,
+    "oldPrice": 180,
+    "price": 144,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -57,7 +61,8 @@
   {
     "id": "morada_coins_1000",
     "name": "1000 Coins",
-    "price": 360,
+    "oldPrice": 360,
+    "price": 288,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -65,7 +70,8 @@
   {
     "id": "fac_lavagem_morada",
     "name": "Fac Lavagem (3 no estoque)",
-    "price": 2900,
+    "oldPrice": 2900,
+    "price": 2320,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -75,7 +81,8 @@
   {
     "id": "fac_ia2_morada",
     "name": "Fac (IA2/SUB/PT)",
-    "price": 2500,
+    "oldPrice": 2500,
+    "price": 2000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -85,7 +92,8 @@
   {
     "id": "fac_arma_morada",
     "name": "Fac (G3/SUB/PT)",
-    "price": 2000,
+    "oldPrice": 2000,
+    "price": 1600,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -95,7 +103,8 @@
   {
     "id": "fac_muni_morada",
     "name": "Fac Munição",
-    "price": 2000,
+    "oldPrice": 2000,
+    "price": 1600,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -105,7 +114,8 @@
   {
     "id": "fac_desmanche_morada",
     "name": "Fac (Desmanche/Colete)",
-    "price": 3500,
+    "oldPrice": 3500,
+    "price": 2800,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -115,7 +125,8 @@
   {
     "id": "fac_c4_morada",
     "name": "Fac (C4/Algema)",
-    "price": 1500,
+    "oldPrice": 1500,
+    "price": 1200,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -125,7 +136,8 @@
   {
     "id": "fac_droga_morada",
     "name": "Fac Droga",
-    "price": 1500,
+    "oldPrice": 1500,
+    "price": 1200,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -135,7 +147,8 @@
   {
     "id": "morada_vagas_painel",
     "name": "+10 Vagas Painel",
-    "price": 500,
+    "oldPrice": 500,
+    "price": 400,
     "city": "moradadovalley",
     "imgUrl": "/vagas.png",
     "tab": "Facções",
@@ -144,7 +157,8 @@
   {
     "id": "vip_fac_morada",
     "name": "VIP FAC (30 dias)",
-    "price": 980,
+    "oldPrice": 980,
+    "price": 784,
     "city": "moradadovalley",
     "description": "/vip-fac",
     "tab": "Facções",
@@ -154,7 +168,8 @@
   {
     "id": "prime_morada",
     "name": "FAC Prime (30 dias)",
-    "price": 2000,
+    "oldPrice": 2000,
+    "price": 1600,
     "city": "moradadovalley",
     "description": "/fac-prime",
     "tab": "Facções",
@@ -164,7 +179,8 @@
   {
     "id": "morada_alterar_nome",
     "name": "Alterar Nome FAC",
-    "price": 400,
+    "oldPrice": 400,
+    "price": 320,
     "city": "moradadovalley",
     "tab": "Facções",
     "imgUrl": "/alterarnome.png",
@@ -173,7 +189,8 @@
   {
     "id": "morada_amarracao",
     "name": "Retirada Amarração",
-    "price": 99,
+    "oldPrice": 99,
+    "price": 79.2,
     "city": "moradadovalley",
     "description": "/amarracao",
     "tab": "Serviços",
@@ -183,7 +200,8 @@
   {
     "id": "morada_unban_auto",
     "name": "Unban Automático",
-    "price": 150,
+    "oldPrice": 150,
+    "price": 120,
     "city": "moradadovalley",
     "description": "/unban-auto",
     "tab": "Serviços",
@@ -193,7 +211,8 @@
   {
     "id": "morada_sinuca",
     "name": "Mesa de Sinuca",
-    "price": 350,
+    "oldPrice": 350,
+    "price": 280,
     "city": "moradadovalley",
     "description": "/sinuca",
     "tab": "Serviços",
