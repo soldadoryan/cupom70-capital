@@ -1,9 +1,18 @@
 [
   {
+    "id": "fac_capofol_capital",
+    "name": "Capofol",
+    "price": 3800,
+    "city": "capitalcity",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/fac_capofol.png",
+    "details": "A droga mais lucrativa da cidade!"
+  },
+  {
     "id": "fac_ar15_capital",
     "name": "Fac AR15/SUB/PT",
-    "oldPrice": 20000,
-    "price": 15000,
+    "price": 7000,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Oferta Limitada",

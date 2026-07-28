@@ -2,13 +2,22 @@
   {
     "id": "fac_ar15_morada",
     "name": "Fac AR15/SUB/PT",
-    "oldPrice": 5000,
-    "price": 4000,
+    "price": 1900,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Oferta Limitada",
     "imgUrl": "/fac_ar15_capital.png",
     "details": "Facção responsável por produção de Armas."
+  },
+  {
+    "id": "fac_capofol_capital",
+    "name": "Capofol",
+    "price": 1800,
+    "city": "moradadovalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/fac_capofol.png",
+    "details": "A droga mais lucrativa da cidade!"
   },
   {
     "id": "org_coop_morada",
