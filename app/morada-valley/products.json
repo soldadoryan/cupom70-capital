@@ -1,5 +1,15 @@
 [
   {
+    "id": "fac_ctatico_morada",
+    "name": "Contrabando Tático",
+    "price": 2000,
+    "city": "moradadovalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/ctatico.png",
+    "details": "Produto sujeito à alteração!"
+  },
+  {
     "id": "fac_ar15_morada",
     "name": "Fac AR15/SUB/PT",
     "price": 1900,
