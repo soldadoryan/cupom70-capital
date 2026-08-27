@@ -1,24 +1,19 @@
 "use client";
 import useRequest from "@/hooks/useRequest";
-import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export function ShopStatus() {
   const { createRequest } = useRequest();
-  const router = useRouter();
-  const pathname = usePathname();
 
   const handleGetShopStatus = async () => {
+    const origin = encodeURIComponent(window.location.hostname);
     const response: { status: "on" | "off" } = await createRequest({
-      url: "/shop-status",
+      url: `/shop-status?origin=${origin}`,
       method: "GET",
     });
 
-    if (response!.status === "off" && pathname !== "/manutencao") {
-      router.push("/manutencao");
-    }
-    if (response!.status === "on" && pathname === "/manutencao") {
-      router.push("/");
+    if (response!.status === "off") {
+      window.location.href = "https://capitalcity.tebex.io";
     }
   };
 
