@@ -6,12 +6,13 @@ import s from "./page.module.css";
 
 export default function Home() {
   return (
-    <section className={s.page}>
-      <Container customClass={`${s.container}`}>
-        <ShopStatus />
-        <AuthForm />
-        <Auth />
-      </Container>
-    </section>
+    <ShopStatus>
+      <section className={s.page}>
+        <Container customClass={`${s.container}`}>
+          <AuthForm />
+          <Auth />
+        </Container>
+      </section>
+    </ShopStatus>
   );
 }

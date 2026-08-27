@@ -1,15 +1,12 @@
 import { PageStructure } from "@/components/PageStructure/PageStructure";
 import { Container } from "@/components/Container";
 import { Sidebar } from "@/components/Sidebar";
-import { ShopStatus } from "@/components/ShopStatus";
 import s from "./page.module.css";
 
 export default function Home() {
   return (
-    <>
-      <ShopStatus />
-      <PageStructure>
-        <Container customClass={s.customContainer}>
+    <PageStructure>
+      <Container customClass={s.customContainer}>
           <main className={s.main}>
             <h2>Utilize as categorias acima para navegar entre os produtos.</h2>
             <p>
@@ -38,9 +35,8 @@ export default function Home() {
               VIP da Capital e eleve sua experiência na cidade a um novo nível!
             </p>
           </main>
-          <Sidebar />
-        </Container>
-      </PageStructure>
-    </>
+        <Sidebar />
+      </Container>
+    </PageStructure>
   );
 }

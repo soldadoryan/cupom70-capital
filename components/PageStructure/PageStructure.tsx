@@ -7,14 +7,13 @@ import s from "./styles.module.css";
 
 export function PageStructure({ children }: PageStructurePropsType) {
   return (
-    <>
+    <ShopStatus>
       <Auth />
-      <ShopStatus />
       <section className={s.page}>
         <Header />
         {children}
         <Footer />
       </section>
-    </>
+    </ShopStatus>
   );
 }
