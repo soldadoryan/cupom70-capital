@@ -40,7 +40,7 @@
   {
     "id": "capital_coins_50",
     "name": "50 Coins",
-    "price": 18,
+    "price": 14,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -48,7 +48,7 @@
   {
     "id": "capital_coins_300",
     "name": "300 Coins",
-    "price": 108,
+    "price": 84,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -56,7 +56,7 @@
   {
     "id": "capital_coins_500",
     "name": "500 Coins",
-    "price": 180,
+    "price": 140,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
@@ -64,7 +64,7 @@
   {
     "id": "capital_coins_1000",
     "name": "1000 Coins",
-    "price": 360,
+    "price": 280,
     "city": "capitalcity",
     "imgUrl": "/coins.png",
     "tab": "Coins"
