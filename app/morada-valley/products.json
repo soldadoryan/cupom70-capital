@@ -44,7 +44,7 @@
   {
     "id": "morada_coins_10",
     "name": "10 Coins",
-    "price": 2.8,
+    "price": 3.6,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -52,7 +52,7 @@
   {
     "id": "morada_coins_50",
     "name": "50 Coins",
-    "price": 14,
+    "price": 18,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -60,7 +60,7 @@
   {
     "id": "morada_coins_300",
     "name": "300 Coins",
-    "price": 84,
+    "price": 108,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -68,7 +68,7 @@
   {
     "id": "morada_coins_500",
     "name": "500 Coins",
-    "price": 140,
+    "price": 180,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
@@ -76,7 +76,7 @@
   {
     "id": "morada_coins_1000",
     "name": "1000 Coins",
-    "price": 280,
+    "price": 360,
     "city": "moradadovalley",
     "tab": "Coins",
     "imgUrl": "/coins.png"
