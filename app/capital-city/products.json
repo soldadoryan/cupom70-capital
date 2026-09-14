@@ -1,5 +1,16 @@
 [
   {
+    "id": "al_automatica_capital",
+    "name": "AL Prime",
+    "oldPrice": 269,
+    "price": 199,
+    "city": "capitalcity",
+    "description": "/al-prime",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/al_automatica.png",
+    "details": "Receba uma WL e um VIP Capital automaticamente."
+  },
+  {
     "id": "fac_ctatico_capital",
     "name": "Contrabando Tático",
     "price": 6500,
@@ -206,17 +217,6 @@
     "tab": "Serviços",
     "imgUrl": "/amarracao.png",
     "details": "Remova sua amarração instantâneamente."
-  },
-  {
-    "id": "al_automatica_capital",
-    "name": "AL Prime",
-    "oldPrice": 269,
-    "price": 199,
-    "city": "capitalcity",
-    "description": "/al-prime",
-    "tab": "Oferta Limitada",
-    "imgUrl": "/al_automatica.png",
-    "details": "Receba uma WL e um VIP Capital automaticamente."
   },
   {
     "id": "capital_veiculo_prime",
