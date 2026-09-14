@@ -210,7 +210,8 @@
   {
     "id": "al_automatica_capital",
     "name": "AL Prime",
-    "price": 269,
+    "oldPrice": 269,
+    "price": 199,
     "city": "capitalcity",
     "description": "/al-prime",
     "tab": "Serviços",
