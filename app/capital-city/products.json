@@ -1,9 +1,19 @@
 [
   {
+    "id": "al_fac_capital",
+    "name": "AL Fac (Fac/Org)",
+    "oldPrice": 1500,
+    "price": 750,
+    "city": "capitalcity",
+    "description": "/al-prioritaria-fac",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/al-fac.webp",
+    "details": "Traga 15 novos jogadores para a facção/organização."
+  },
+  {
     "id": "al_automatica_capital",
     "name": "AL Prime",
-    "oldPrice": 269,
-    "price": 199,
+    "price": 269,
     "city": "capitalcity",
     "description": "/al-prime",
     "tab": "Oferta Limitada",
@@ -158,16 +168,6 @@
     "imgUrl": "/vagas.png",
     "tab": "Facções",
     "details": "Limite de 30 vagas por facção (3 compras)."
-  },
-  {
-    "id": "al_fac_capital",
-    "name": "AL Fac (Fac/Org)",
-    "price": 1500,
-    "city": "capitalcity",
-    "description": "/al-prioritaria-fac",
-    "tab": "Facções",
-    "imgUrl": "/al-fac.webp",
-    "details": "Traga 15 novos jogadores para a facção/organização."
   },
   {
     "id": "vip_fac_capital",
