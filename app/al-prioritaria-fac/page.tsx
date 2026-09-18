@@ -66,8 +66,8 @@ export default function AlPrioritariaFac() {
                 Inatividade;
               </li>
               <li>
-                O membro indicado que se desligar da organização terá sua
-                Whitelist revogada automaticamente;
+                O membro indicado que se desligar da organização entrará em blacklist
+                por 90 dias.
               </li>
             </ul>
           </main>
