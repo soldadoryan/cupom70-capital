@@ -1,15 +1,5 @@
 [
   {
-    "id": "al_fac_capital",
-    "name": "AL Fac (Fac/Org)",
-    "price": 1500,
-    "city": "capitalcity",
-    "description": "/al-prioritaria-fac",
-    "tab": "Facções",
-    "imgUrl": "/al-fac.webp",
-    "details": "Traga 15 novos jogadores para a facção/organização."
-  },
-  {
     "id": "al_automatica_capital",
     "name": "AL Prime",
     "price": 269,
@@ -18,6 +8,16 @@
     "tab": "Oferta Limitada",
     "imgUrl": "/al_automatica.png",
     "details": "Receba uma WL e um VIP Capital automaticamente."
+  },
+  {
+    "id": "al_fac_capital",
+    "name": "AL Fac (Fac/Org)",
+    "price": 1500,
+    "city": "capitalcity",
+    "description": "/al-prioritaria-fac",
+    "tab": "Facções",
+    "imgUrl": "/al-fac.webp",
+    "details": "Traga 15 novos jogadores para a facção/organização."
   },
   {
     "id": "fac_ctatico_capital",
