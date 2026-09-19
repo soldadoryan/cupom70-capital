@@ -2,11 +2,10 @@
   {
     "id": "al_fac_capital",
     "name": "AL Fac (Fac/Org)",
-    "oldPrice": 1500,
-    "price": 750,
+    "price": 1500,
     "city": "capitalcity",
     "description": "/al-prioritaria-fac",
-    "tab": "Oferta Limitada",
+    "tab": "Facções'",
     "imgUrl": "/al-fac.webp",
     "details": "Traga 15 novos jogadores para a facção/organização."
   },
