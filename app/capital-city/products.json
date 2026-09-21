@@ -10,6 +10,15 @@
     "details": "Receba uma WL e um VIP Capital automaticamente."
   },
   {
+    "id": "capital_coins_10",
+    "name": "10 Coins",
+    "price": 2.8,
+    "oldPrice": 3.6,
+    "city": "capitalcity",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
     "id": "al_fac_capital",
     "name": "AL Fac (Fac/Org)",
     "price": 1500,
@@ -48,15 +57,6 @@
     "tab": "Oferta Limitada",
     "imgUrl": "/fac_ar15_capital.png",
     "details": "Facção responsável por produção de Armas."
-  },
-  {
-    "id": "capital_coins_10",
-    "name": "10 Coins",
-    "price": 2.8,
-    "oldPrice": 3.6,
-    "city": "capitalcity",
-    "imgUrl": "/coins.png",
-    "tab": "Coins"
   },
   {
     "id": "capital_coins_50",
