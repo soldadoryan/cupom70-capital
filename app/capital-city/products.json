@@ -1,14 +1,5 @@
 [
   {
-    "id": "primeiro_carro_vip_capital",
-    "name": "Primeiro Carro VIP",
-    "price": 199,
-    "city": "capitalcity",
-    "tab": "Oferta Limitada",
-    "imgUrl": "/primeiro_carro.jpg",
-    "details": "Se você não comprou um carro VIP esse mês, este é o seu primeiro carro VIP."
-  },
-  {
     "id": "al_automatica_capital",
     "name": "AL Prime",
     "price": 269,

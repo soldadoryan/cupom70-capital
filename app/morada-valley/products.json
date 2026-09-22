@@ -1,14 +1,5 @@
 [
   {
-    "id": "primeiro_carro_vip_morada",
-    "name": "Primeiro Carro VIP",
-    "price": 199,
-    "city": "moradadovalley",
-    "tab": "Oferta Limitada",
-    "imgUrl": "/primeiro_carro.jpg",
-    "details": "Se você não comprou um carro VIP esse mês, este é o seu primeiro carro VIP."
-  },
-  {
     "id": "fac_ctatico_morada",
     "name": "Contrabando Tático",
     "price": 2000,
