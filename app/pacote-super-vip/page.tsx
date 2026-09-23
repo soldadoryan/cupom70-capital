@@ -55,7 +55,7 @@ export default function PacoteSuperVip() {
                 </div>
                 <div className={s.itemText}>
                   <span className={s.itemLabel}>Bônus</span>
-                  <span className={s.itemValue}>Maleta de 500K Gold</span>
+                  <span className={s.itemValue}>Maleta de 500K Limpo</span>
                 </div>
               </li>
               {items.map((item) => (
