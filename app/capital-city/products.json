@@ -1,5 +1,25 @@
 [
   {
+    "id": "pacote_deluxe_capital",
+    "name": "Pacote Deluxe",
+    "price": 1000,
+    "city": "capitalcity",
+    "description": "/pacote-deluxe",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pacote_deluxe.jpg",
+    "details": "Pacote de itens deluxe para aprimorar seu RP."
+  },
+  {
+    "id": "pacote_super_vip_capital",
+    "name": "Pacote Super VIP",
+    "price": 149,
+    "city": "capitalcity",
+    "description": "/pacote-super-vip",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pacote_super_vip.jpg",
+    "details": "Pacote de itens vip para aprimorar seu RP."
+  },
+  {
     "id": "al_automatica_capital",
     "name": "AL Prime",
     "price": 269,
