@@ -1,5 +1,45 @@
 [
   {
+    "id": "pack_veiculos_1_capital",
+    "name": "Pack Veículos 1",
+    "price": 350,
+    "city": "capitalcity",
+    "description": "/pack-veiculos-1",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack1.png",
+    "details": "4 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
+    "id": "pack_veiculos_2_capital",
+    "name": "Pack Veículos 2",
+    "price": 250,
+    "city": "capitalcity",
+    "description": "/pack-veiculos-2",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack2.png",
+    "details": "4 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
+    "id": "pack_veiculos_3_capital",
+    "name": "Pack Veículos 3",
+    "price": 200,
+    "city": "capitalcity",
+    "description": "/pack-veiculos-3",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack3.png",
+    "details": "3 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
+    "id": "pack_veiculos_4_capital",
+    "name": "Pack Veículos 4",
+    "price": 120,
+    "city": "capitalcity",
+    "description": "/pack-veiculos-4",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack4.png",
+    "details": "2 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
     "id": "pacote_deluxe_capital",
     "name": "Pacote Deluxe",
     "price": 1000,

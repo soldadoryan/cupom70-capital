@@ -1,5 +1,45 @@
 [
   {
+    "id": "pack_veiculos_1_morada",
+    "name": "Pack Veículos 1",
+    "price": 299,
+    "city": "moradadovalley",
+    "description": "/pack-veiculos-1",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack1.png",
+    "details": "4 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
+    "id": "pack_veiculos_2_morada",
+    "name": "Pack Veículos 2",
+    "price": 199,
+    "city": "moradadovalley",
+    "description": "/pack-veiculos-2",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack2.png",
+    "details": "4 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
+    "id": "pack_veiculos_3_morada",
+    "name": "Pack Veículos 3",
+    "price": 160,
+    "city": "moradadovalley",
+    "description": "/pack-veiculos-3",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack3.png",
+    "details": "3 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
+    "id": "pack_veiculos_4_morada",
+    "name": "Pack Veículos 4",
+    "price": 80,
+    "city": "moradadovalley",
+    "description": "/pack-veiculos-4",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/pack4.png",
+    "details": "2 veículos VIP por 30 dias. Entrega em até 2 dias úteis."
+  },
+  {
     "id": "fac_ctatico_morada",
     "name": "Contrabando Tático",
     "price": 2000,
