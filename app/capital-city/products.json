@@ -1,5 +1,16 @@
 [
   {
+    "id": "al_automatica_capital",
+    "name": "AL Prime",
+    "oldPrice": 269,
+    "price": 79.9,
+    "city": "capitalcity",
+    "description": "/al-prime",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/al_automatica.png",
+    "details": "Receba uma WL e um VIP Capital automaticamente."
+  },
+  {
     "id": "pack_veiculos_1_capital",
     "name": "Pack Veículos 1",
     "price": 350,
@@ -58,16 +69,6 @@
     "tab": "Oferta Limitada",
     "imgUrl": "/pacote_super_vip.jpg",
     "details": "Pacote de itens vip para aprimorar seu RP."
-  },
-  {
-    "id": "al_automatica_capital",
-    "name": "AL Prime",
-    "price": 269,
-    "city": "capitalcity",
-    "description": "/al-prime",
-    "tab": "Oferta Limitada",
-    "imgUrl": "/al_automatica.png",
-    "details": "Receba uma WL e um VIP Capital automaticamente."
   },
   {
     "id": "capital_coins_10",
