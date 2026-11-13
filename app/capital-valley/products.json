@@ -168,6 +168,146 @@
     "details": "Altere o nome da sua facção sob avaliação da Staff."
   },
   {
+    "id": "valley_baep",
+    "name": "Assumir BAEP",
+    "price": 5500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_coe",
+    "name": "Assumir COE",
+    "price": 5500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_cot",
+    "name": "Assumir COT",
+    "price": 5000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_denarc",
+    "name": "Assumir Denarc",
+    "price": 4500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_ft",
+    "name": "Assumir FT",
+    "price": 4500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_gate",
+    "name": "Assumir GATE",
+    "price": 4500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_gcc",
+    "name": "Assumir GCC",
+    "price": 1850,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_interpol",
+    "name": "Assumir Interpol",
+    "price": 4500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_pc",
+    "name": "Assumir PC",
+    "price": 4000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_pf",
+    "name": "Assumir PF",
+    "price": 4500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_prf",
+    "name": "Assumir PRF",
+    "price": 2500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_romu",
+    "name": "Assumir ROMU",
+    "price": 2200,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_rota",
+    "name": "Assumir Rota",
+    "price": 6000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
+    "id": "valley_tor",
+    "name": "Assumir Tor",
+    "price": 3000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Organizações",
+    "imgUrl": "/guarnicao.png",
+    "details": "Assuma a guarnição e <b>receba 30 WLs</b> pra trazer sua galera."
+  },
+  {
     "id": "valley_amarracao",
     "name": "Retirada Amarração",
     "price": 200,
