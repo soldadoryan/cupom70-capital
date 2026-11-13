@@ -359,6 +359,34 @@ export default function TermoFaccao() {
               resultar na perda do painel, independentemente de aviso prévio,
               conforme avaliação da administração.
             </p>
+            <hr />
+
+            <h2>10. Cláusula Adicional – Durabilidade dos Produtos</h2>
+
+            <p>
+              <strong>10.1.</strong> Ao realizar compras de painel,
+              organização, QG&apos;s, farm e/ou produtos, o jogador concorda que
+              estes itens/produtos possuem{" "}
+              <strong>
+                durabilidade de 06 (seis) meses ou até o wipe no servidor
+              </strong>
+              , sendo determinante o que vier a acontecer primeiro.
+            </p>
+            <p>
+              <strong>10.2.</strong> Exemplo: um painel foi comprado e após 3
+              meses da compra o servidor foi submetido a um wipe. Nesse caso o
+              painel não será mais válido por ocasião do reset do servidor.
+            </p>
+            <p>
+              <strong>10.3.</strong> Em caso de quaisquer dúvidas sobre
+              renovações e condições específicas, a liderança deve entrar em
+              contato com a administração.
+            </p>
+            <p>
+              <strong>10.4.</strong> A presente regra passa a valer a partir de{" "}
+              <strong>12 de novembro de 2026</strong>, somente para compras
+              realizadas após essa data.
+            </p>
             <br />
             <br />
             <br />
