@@ -2,7 +2,7 @@
   {
     "id": "fac_ctatico_morada",
     "name": "Contrabando Tático",
-    "price": 2000,
+    "price": 1000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Oferta Limitada",
@@ -12,7 +12,7 @@
   {
     "id": "fac_ar15_morada",
     "name": "Fac AR15/SUB/PT",
-    "price": 4000,
+    "price": 2500,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Oferta Limitada",
@@ -22,7 +22,7 @@
   {
     "id": "fac_capofol_morada",
     "name": "Capofol",
-    "price": 1800,
+    "price": 3000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Oferta Limitada",
@@ -84,7 +84,7 @@
   {
     "id": "fac_lavagem_morada",
     "name": "Fac Lavagem (3 no estoque)",
-    "price": 2900,
+    "price": 2600,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -94,7 +94,7 @@
   {
     "id": "fac_ia2_morada",
     "name": "Fac (IA2/SUB/PT)",
-    "price": 2500,
+    "price": 1980,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -104,7 +104,7 @@
   {
     "id": "fac_arma_morada",
     "name": "Fac (G3/SUB/PT)",
-    "price": 2000,
+    "price": 1600,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -114,7 +114,7 @@
   {
     "id": "fac_muni_morada",
     "name": "Fac Munição",
-    "price": 2000,
+    "price": 1200,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -124,7 +124,7 @@
   {
     "id": "fac_desmanche_morada",
     "name": "Fac (Desmanche/Colete)",
-    "price": 3500,
+    "price": 1500,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -134,7 +134,7 @@
   {
     "id": "fac_c4_morada",
     "name": "Fac (C4/Algema)",
-    "price": 1500,
+    "price": 1000,
     "city": "moradadovalley",
     "description": "/termo-org",
     "tab": "Facções",
@@ -144,7 +144,7 @@
   {
     "id": "fac_droga_morada",
     "name": "Fac Droga",
-    "price": 1500,
+    "price": 800,
     "city": "capitalcity",
     "description": "/termo-org",
     "tab": "Facções",
@@ -154,7 +154,7 @@
   {
     "id": "morada_vagas_painel",
     "name": "+10 Vagas Painel",
-    "price": 500,
+    "price": 250,
     "city": "moradadovalley",
     "imgUrl": "/vagas.png",
     "tab": "Facções",
@@ -163,7 +163,7 @@
   {
     "id": "vip_fac_morada",
     "name": "VIP FAC (30 dias)",
-    "price": 980,
+    "price": 550,
     "city": "moradadovalley",
     "description": "/vip-fac",
     "tab": "Facções",
@@ -173,7 +173,7 @@
   {
     "id": "prime_morada",
     "name": "FAC Prime (30 dias)",
-    "price": 2000,
+    "price": 1000,
     "city": "moradadovalley",
     "description": "/fac-prime",
     "tab": "Facções",
@@ -183,7 +183,7 @@
   {
     "id": "morada_alterar_nome",
     "name": "Alterar Nome FAC",
-    "price": 400,
+    "price": 200,
     "city": "moradadovalley",
     "tab": "Facções",
     "imgUrl": "/alterarnome.png",
@@ -192,7 +192,7 @@
   {
     "id": "morada_amarracao",
     "name": "Retirada Amarração",
-    "price": 99,
+    "price": 150,
     "city": "moradadovalley",
     "description": "/amarracao",
     "tab": "Serviços",
@@ -202,7 +202,7 @@
   {
     "id": "morada_unban_auto",
     "name": "Unban Automático",
-    "price": 500,
+    "price": 600,
     "city": "moradadovalley",
     "description": "/unban-auto",
     "tab": "Serviços",
@@ -212,7 +212,7 @@
   {
     "id": "morada_sinuca",
     "name": "Mesa de Sinuca",
-    "price": 350,
+    "price": 400,
     "city": "moradadovalley",
     "description": "/sinuca",
     "tab": "Serviços",

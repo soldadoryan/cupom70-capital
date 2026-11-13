@@ -222,7 +222,7 @@
   {
     "id": "capital_alterar_nome",
     "name": "Alterar Nome FAC",
-    "price": 400,
+    "price": 600,
     "city": "capitalcity",
     "tab": "Facções",
     "imgUrl": "/alterarnome.png",
