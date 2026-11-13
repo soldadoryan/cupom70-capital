@@ -1,0 +1,28 @@
+import { Suspense } from "react";
+import { Metadata } from "next";
+import { PageStructure } from "@/components/PageStructure";
+import { Container } from "@/components/Container";
+import { Products } from "@/components/Products";
+import { Sidebar } from "@/components/Sidebar";
+import s from "./page.module.css";
+import productsList from "./products.json";
+
+export const metadata: Metadata = {
+  title: "Capital City | Capital Valley",
+};
+
+export default function CapitalValley() {
+  return (
+    <PageStructure>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Container customClass={s.customContainer}>
+          <main className={s.main}>
+            <h2 className={s.title}>Capital Valley</h2>
+            <Products products={productsList} />
+          </main>
+          <Sidebar />
+        </Container>
+      </Suspense>
+    </PageStructure>
+  );
+}

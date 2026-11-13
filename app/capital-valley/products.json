@@ -1,0 +1,190 @@
+[
+  {
+    "id": "valley_coins_10",
+    "name": "10 Coins",
+    "price": 2.8,
+    "city": "capitalvalley",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "fac_ctatico_valley",
+    "name": "Contrabando Tático",
+    "price": 2200,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/ctatico.png",
+    "details": "Produto sujeito à alteração!"
+  },
+  {
+    "id": "fac_capofol_valley",
+    "name": "Capofol",
+    "price": 4500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/fac_capofol.png",
+    "details": "A droga mais lucrativa da cidade!"
+  },
+  {
+    "id": "fac_ar15_valley",
+    "name": "Fac AR15/SUB/PT",
+    "price": 5000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/fac_ar15_capital.png",
+    "details": "Facção responsável por produção de Armas."
+  },
+  {
+    "id": "valley_coins_50",
+    "name": "50 Coins",
+    "price": 14,
+    "city": "capitalvalley",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "valley_coins_300",
+    "name": "300 Coins",
+    "price": 84,
+    "city": "capitalvalley",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "valley_coins_500",
+    "name": "500 Coins",
+    "price": 140,
+    "city": "capitalvalley",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "valley_coins_1000",
+    "name": "1000 Coins",
+    "price": 280,
+    "city": "capitalvalley",
+    "imgUrl": "/coins.png",
+    "tab": "Coins"
+  },
+  {
+    "id": "fac_arma_valley",
+    "name": "Fac (G3/SUB/PT)",
+    "price": 3500,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_arma.png",
+    "details": "Facção responsável por produção de Armas."
+  },
+  {
+    "id": "fac_muni_valley",
+    "name": "Fac Munição",
+    "price": 3000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_muni.png",
+    "details": "Facção responsável por produção de Munições."
+  },
+  {
+    "id": "fac_desmanche_valley",
+    "name": "Fac (Desmanche/Colete)",
+    "price": 3200,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_desmanche_colete.png",
+    "details": "Facção responsável por produção de Desmanche e Colete."
+  },
+  {
+    "id": "fac_c4_valley",
+    "name": "Fac (C4/Algema)",
+    "price": 2000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_c4_algema.png",
+    "details": "Facção responsável por produção de C4 e Algemas."
+  },
+  {
+    "id": "fac_droga_valley",
+    "name": "Fac Droga",
+    "price": 1000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Facções",
+    "imgUrl": "/fac_droga.png",
+    "details": "Facção responsável por produção de Droga (1 droga)."
+  },
+  {
+    "id": "valley_vagas_painel",
+    "name": "+10 Vagas Painel",
+    "price": 500,
+    "city": "capitalvalley",
+    "imgUrl": "/vagas.png",
+    "tab": "Facções",
+    "details": "Limite de 30 vagas por facção (3 compras)."
+  },
+  {
+    "id": "vip_fac_valley",
+    "name": "VIP FAC (30 dias)",
+    "price": 750,
+    "city": "capitalvalley",
+    "description": "/vip-fac",
+    "tab": "Facções",
+    "imgUrl": "/vip-fac.png",
+    "details": "Buff de farm + salário bônus + tampas."
+  },
+  {
+    "id": "prime_valley",
+    "name": "FAC Prime (30 dias)",
+    "price": 1500,
+    "city": "capitalvalley",
+    "description": "/fac-prime",
+    "tab": "Facções",
+    "imgUrl": "/fac-prime.png",
+    "details": "Buff de farm + salário bônus + tampas + 2 veículos 48T."
+  },
+  {
+    "id": "atualizacao_qg_valley",
+    "name": "Atualização de QG",
+    "price": 2000,
+    "city": "capitalvalley",
+    "description": "/atualizacao-qg",
+    "tab": "Facções",
+    "imgUrl": "/atualizacao_qg.webp",
+    "details": "Solicite modificações para o seu QG sob avaliação da Staff."
+  },
+  {
+    "id": "valley_alterar_nome",
+    "name": "Alterar Nome FAC",
+    "price": 400,
+    "city": "capitalvalley",
+    "tab": "Facções",
+    "imgUrl": "/alterarnome.png",
+    "details": "Altere o nome da sua facção sob avaliação da Staff."
+  },
+  {
+    "id": "valley_amarracao",
+    "name": "Retirada Amarração",
+    "price": 200,
+    "city": "capitalvalley",
+    "description": "/amarracao",
+    "tab": "Serviços",
+    "imgUrl": "/amarracao.png",
+    "details": "Remova sua amarração instantâneamente."
+  },
+  {
+    "id": "valley_sinuca",
+    "name": "Mesa de Sinuca",
+    "price": 400,
+    "city": "capitalvalley",
+    "description": "/sinuca",
+    "tab": "Serviços",
+    "imgUrl": "/sinuca.png",
+    "details": "Mesa de sinuca personalizada permanente."
+  }
+]
