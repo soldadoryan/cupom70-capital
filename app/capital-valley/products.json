@@ -2,7 +2,7 @@
   {
     "id": "valley_coins_10",
     "name": "10 Coins",
-    "price": 2.8,
+    "price": 2.5,
     "oldPrice": 3.6,
     "city": "capitalvalley",
     "imgUrl": "/coins.png",
@@ -41,7 +41,7 @@
   {
     "id": "valley_coins_50",
     "name": "50 Coins",
-    "price": 14,
+    "price": 12.5,
     "oldPrice": 18,
     "city": "capitalvalley",
     "imgUrl": "/coins.png",
@@ -50,7 +50,7 @@
   {
     "id": "valley_coins_300",
     "name": "300 Coins",
-    "price": 84,
+    "price": 75,
     "oldPrice": 108,
     "city": "capitalvalley",
     "imgUrl": "/coins.png",
@@ -59,7 +59,7 @@
   {
     "id": "valley_coins_500",
     "name": "500 Coins",
-    "price": 140,
+    "price": 125,
     "oldPrice": 180,
     "city": "capitalvalley",
     "imgUrl": "/coins.png",
@@ -68,7 +68,7 @@
   {
     "id": "valley_coins_1000",
     "name": "1000 Coins",
-    "price": 280,
+    "price": 250,
     "oldPrice": 360,
     "city": "capitalvalley",
     "imgUrl": "/coins.png",
