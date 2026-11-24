@@ -28,6 +28,16 @@
     "details": "A droga mais lucrativa da cidade!"
   },
   {
+    "id": "fac_ak_pistol_valley",
+    "name": "Fac AK-47/Colt-45",
+    "price": 2000,
+    "city": "capitalvalley",
+    "description": "/termo-org",
+    "tab": "Oferta Limitada",
+    "imgUrl": "/fac_arma.png",
+    "details": "Facção responsável por produção de Armas."
+  },
+  {
     "id": "fac_ar15_valley",
     "name": "Fac AR15/SUB/PT",
     "price": 5000,
